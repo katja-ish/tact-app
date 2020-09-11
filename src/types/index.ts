@@ -1,2 +1,2 @@
-export type { RootStackParamList } from './RootStackParamList';
-export { ScreenNames } from './ScreenNames';
+export * from './RootStackParamList';
+export * from './ScreenNames';
