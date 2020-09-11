@@ -1,16 +1,17 @@
 import React from 'react';
-import { createStackNavigator } from '@react-navigation/stack';
+// import { createStackNavigator } from '@react-navigation/stack';
 import { Conversation, ConversationsList, Settings } from '@app/screens';
 import { ScreenNames, RootStackParamList } from '@app/types';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
-const Stack = createStackNavigator<RootStackParamList>();
+const Tab = createBottomTabNavigator<RootStackParamList>();
 
 export default () => {
   return (
-    <Stack.Navigator>
-      <Stack.Screen name={ScreenNames.CONVERSATIONS_LIST} component={ConversationsList} />
-      <Stack.Screen name={ScreenNames.CONVERSATION} component={Conversation} />
-      <Stack.Screen name={ScreenNames.SETTINGS} component={Settings} />
-    </Stack.Navigator>
+    <Tab.Navigator>
+      <Tab.Screen name={ScreenNames.CONVERSATIONS_LIST} component={ConversationsList} />
+      <Tab.Screen name={ScreenNames.CONVERSATION} component={Conversation} />
+      <Tab.Screen name={ScreenNames.SETTINGS} component={Settings} />
+    </Tab.Navigator>
   );
 };
