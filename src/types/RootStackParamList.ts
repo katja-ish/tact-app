@@ -1,3 +1,4 @@
+import { RouteProp } from '@react-navigation/native';
 import { ScreenNames } from './ScreenNames';
 
 export type RootStackParamList = {
@@ -7,3 +8,5 @@ export type RootStackParamList = {
   [ScreenNames.CONVERSATIONS_LIST]: undefined;
   [ScreenNames.FRIEND_LIST]: undefined;
 };
+
+export type RouteType = RouteProp<Record<string, object | undefined>, string>;

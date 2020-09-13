@@ -3,8 +3,8 @@ import { Text, View, SafeAreaView, StyleSheet } from 'react-native';
 
 const Account = () => {
   return (
-    <SafeAreaView>
-      <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
+      <View>
         <Text style={styles.text}>Account Screen</Text>
       </View>
     </SafeAreaView>
@@ -14,7 +14,7 @@ const Account = () => {
 const styles = StyleSheet.create({
   container: {
     backgroundColor: 'pink',
-    height: '100%',
+    flex: 1,
   },
   text: {
     fontSize: 32,
