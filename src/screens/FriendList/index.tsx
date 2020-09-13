@@ -1,11 +1,11 @@
 import React from 'react';
 import { Text, View, SafeAreaView, StyleSheet } from 'react-native';
 
-const Conversation = () => {
+const FriendList = () => {
   return (
     <SafeAreaView>
       <View style={styles.container}>
-        <Text style={styles.text}>Conversation Screen</Text>
+        <Text style={styles.text}>FriendList Screen</Text>
       </View>
     </SafeAreaView>
   );
@@ -13,7 +13,7 @@ const Conversation = () => {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: 'grey',
+    backgroundColor: 'lightblue',
     height: '100%',
   },
   text: {
@@ -21,4 +21,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Conversation;
+export default FriendList;
