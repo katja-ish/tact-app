@@ -1,6 +1,7 @@
 export enum ScreenNames {
   ACCOUNT = 'AccountScreen',
+  SETTINGS = 'SettingsScreen',
   CONVERSATIONS_LIST = 'ConversationsListScreen',
   CONVERSATION = 'ConversationScreen',
-  SETTINGS = 'SettingsScreen',
+  FRIEND_LIST = 'FriendListScreen',
 }
