@@ -33,7 +33,6 @@ export default () => {
           return <Icon name={iconName} size={24} color={color} />;
         },
       })}
-      // initialRouteName={Routes.HomeNavigator}
       tabBarOptions={tabBarOption}
       tabBarPosition="bottom">
       <Tab.Screen name={ScreenNames.FRIEND_LIST} component={FriendList} />
