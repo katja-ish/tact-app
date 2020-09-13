@@ -3,9 +3,10 @@ import React from 'react';
 import { FriendList, ConversationsList, Settings } from '@app/screens';
 import Icon from 'react-native-vector-icons/Feather';
 import { ScreenNames, RootStackParamList } from '@app/types';
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+// import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
 
-const Tab = createBottomTabNavigator<RootStackParamList>();
+const Tab = createMaterialTopTabNavigator<RootStackParamList>();
 
 export default () => {
   return (
@@ -13,22 +14,28 @@ export default () => {
       screenOptions={({ route }) => ({
         tabBarIcon: ({ color }) => {
           let iconName = '';
-
-          if (route.name === ScreenNames.FRIEND_LIST) {
-            iconName = 'users';
+          switch (route.name) {
+            case ScreenNames.FRIEND_LIST:
+              iconName = 'users';
+              break;
+            case ScreenNames.FRIEND_LIST:
+              iconName = 'users';
+              break;
+            case ScreenNames.CONVERSATIONS_LIST:
+              iconName = 'message-circle';
+              break;
+            case ScreenNames.SETTINGS:
+              iconName = 'settings';
+              break;
+            default:
+              break;
           }
-          if (route.name === ScreenNames.CONVERSATIONS_LIST) {
-            iconName = 'message-circle';
-          }
-          if (route.name === ScreenNames.SETTINGS) {
-            iconName = 'settings';
-          }
-
           return <Icon name={iconName} size={24} color={color} />;
         },
       })}
       // initialRouteName={Routes.HomeNavigator}
-      tabBarOptions={tabBarOption}>
+      tabBarOptions={tabBarOption}
+      tabBarPosition="bottom">
       <Tab.Screen name={ScreenNames.FRIEND_LIST} component={FriendList} />
       <Tab.Screen name={ScreenNames.CONVERSATIONS_LIST} component={ConversationsList} />
       <Tab.Screen name={ScreenNames.SETTINGS} component={Settings} />
@@ -40,5 +47,6 @@ const tabBarOption = {
   activeTintColor: '#000',
   inactiveTintColor: '#808080',
   showLabel: false,
+  showIcon: true,
   style: { borderTopWidth: 0, backgroundColor: '#fff' },
 };
