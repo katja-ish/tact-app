@@ -6,4 +6,5 @@ export type RootStackParamList = {
   [ScreenNames.CONVERSATION]: undefined;
   [ScreenNames.CONVERSATIONS_LIST]: undefined;
   [ScreenNames.FRIEND_LIST]: undefined;
+  [ScreenNames.SETTINGS_DETAILS]: undefined;
 };

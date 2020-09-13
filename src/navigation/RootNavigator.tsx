@@ -1,5 +1,4 @@
 import React from 'react';
-// import { createStackNavigator } from '@react-navigation/stack';
 import { FriendList, ConversationsList, Settings } from '@app/screens';
 import Icon from 'react-native-vector-icons/Feather';
 import { ScreenNames, RootStackParamList } from '@app/types';

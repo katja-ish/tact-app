@@ -13,7 +13,7 @@ const FriendList = () => {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: 'lightblue',
+    backgroundColor: 'lightyellow',
     height: '100%',
   },
   text: {
