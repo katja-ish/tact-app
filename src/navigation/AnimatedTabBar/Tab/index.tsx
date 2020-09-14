@@ -6,6 +6,7 @@ import Icon from 'react-native-vector-icons/Feather';
 
 import { getIconLabel, getIconName, interpolateColors } from '@app/utils';
 import { RouteType } from '@app/types';
+import { TouchableWithoutFeedback } from 'react-native-gesture-handler';
 
 interface TabProps extends MaterialTopTabBarProps {
   route: RouteType;
@@ -40,10 +41,16 @@ const Tab: React.FC<TabProps> = ({
     outputRange: inputRange.map((i) => (i === index ? 1 : 0)),
   });
 
-  const widthOutput = inputRange.map((i) => (i === index ? 130 : 75));
+  const widthOutput = inputRange.map((i) => (i === index ? 120 : 50));
   const width = Animated.interpolate(position, {
     inputRange,
     outputRange: widthOutput,
+  });
+
+  const scaleOutput = inputRange.map((i) => (i === index ? 1.2 : 1));
+  const scale = Animated.interpolate(position, {
+    inputRange,
+    outputRange: scaleOutput,
   });
 
   const labelTranslateOutput = inputRange.map((i) => (i === index ? 50 : 100));
@@ -61,7 +68,7 @@ const Tab: React.FC<TabProps> = ({
   const iconName = getIconName(route.name);
 
   return (
-    <TouchableOpacity
+    <TouchableWithoutFeedback
       accessibilityRole="button"
       accessibilityLabel={options.tabBarAccessibilityLabel}
       onPress={() => onPress(route, isFocused)}
@@ -73,6 +80,7 @@ const Tab: React.FC<TabProps> = ({
           {
             backgroundColor,
             width,
+            transform: [{ scale }],
           },
         ]}>
         <Animated.Text
@@ -87,7 +95,7 @@ const Tab: React.FC<TabProps> = ({
           {label}
         </Animated.Text>
       </Animated.View>
-    </TouchableOpacity>
+    </TouchableWithoutFeedback>
   );
 };
 export default Tab;
