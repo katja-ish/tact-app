@@ -7,6 +7,7 @@ export type RootStackParamList = {
   [ScreenNames.CONVERSATION]: undefined;
   [ScreenNames.CONVERSATIONS_LIST]: undefined;
   [ScreenNames.FRIEND_LIST]: undefined;
+  [ScreenNames.SETTINGS_DETAILS]: undefined;
 };
 
 export type RouteType = RouteProp<Record<string, object | undefined>, string>;
