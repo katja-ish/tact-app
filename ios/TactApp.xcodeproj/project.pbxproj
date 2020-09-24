@@ -8,34 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* TactAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* TactAppTests.m */; };
-		08C43F0665964F0B92D8C526 /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C31FB9024B644D87966A2708 /* Entypo.ttf */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
-		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		272B8B0E16E14168A4927C30 /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7B192E2572D1432F91256FDE /* Zocial.ttf */; };
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* TactAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* TactAppTests.m */; };
-		3676C0134C5149B1832D26FC /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 61BCB4787F634924BD347050 /* Octicons.ttf */; };
-		3AD53B0D33CC4AF3B7AF6BAC /* FontAwesome5_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B9D01BE61EB44B7987DA43A6 /* FontAwesome5_Regular.ttf */; };
-		43B959CE720047268517DD15 /* FontAwesome5_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 53062E02EC824A3491B35B1C /* FontAwesome5_Solid.ttf */; };
-		46126FCD250E10CD00267096 /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C110763A250E0AC600F72A3A /* Feather.ttf */; };
-		556AFE044129402E9CE21720 /* AntDesign.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 758F655DCEF448028E763E3F /* AntDesign.ttf */; };
-		5E1DC8B8809715C5DAD905FB /* libPods-TactApp-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 57137391AFD02BE6CF8B9EAE /* libPods-TactApp-tvOSTests.a */; };
-		70246887BAE5441DB57E70FD /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AFD25D228F1244CBB78ED6BE /* MaterialCommunityIcons.ttf */; };
-		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		8409FEBD5D234EB6A4EEA95A /* Fontisto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 27EF94E635924C33A9889417 /* Fontisto.ttf */; };
-		8AD629F80CBE45B5BA8EEBDD /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 47A589953B9A488F8207D91D /* Ionicons.ttf */; };
-		93EFE0D7EB8A04A05192E543 /* libPods-TactApp-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D2EF7E5EB1B27EBCF434DEB /* libPods-TactApp-tvOS.a */; };
-		9560A344666741FAA21CF31C /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D675986F3E34CA08771D03B /* FontAwesome.ttf */; };
-		9AC59AAD6AE34E97A61E7587 /* FontAwesome5_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 65D3E6BCF3354D88B0F9BE28 /* FontAwesome5_Brands.ttf */; };
-		A21AAF994C934088A1C4DC00 /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AC1496A8F2D3481A88DA461A /* EvilIcons.ttf */; };
-		C34C67C72026815C6DFB8B6E /* libPods-TactApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8924DB89D2D096368672DE0B /* libPods-TactApp.a */; };
-		C51957FDBA954679AD759A48 /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC583E12E0344BAD9B06A2F8 /* MaterialIcons.ttf */; };
-		D5880BB0423046D48B34B69E /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EDC7259B25E54AE3952BA69E /* SimpleLineIcons.ttf */; };
-		E06ACD083A12428B806DC635 /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ACCB8A6A54924032927DE402 /* Foundation.ttf */; };
-		E555C0FB0EC37FAACCDBF88B /* libPods-TactApp-TactAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 691C6BB8DB6932B2AEF80CBD /* libPods-TactApp-TactAppTests.a */; };
+		8F4DFE117460322E9533A071 /* libPods-TactApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E40611F36FA171589D4850DB /* libPods-TactApp.a */; };
+		90A64C7AEAB1CB6AC88BF300 /* libPods-TactApp-TactAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C30D9D1F8B41309EC3708B1 /* libPods-TactApp-TactAppTests.a */; };
+		BB334E3EF4D11DC52B937B3A /* libPods-TactApp-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 88F3D5E7D77F053F8A068687 /* libPods-TactApp-tvOSTests.a */; };
+		C7CF2F1CD01DDC8D1E0ABEC4 /* libPods-TactApp-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B1D738B80D749F1BC11E270 /* libPods-TactApp-tvOS.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,45 +42,30 @@
 		00E356EE1AD99517003FC87E /* TactAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TactAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* TactAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TactAppTests.m; sourceTree = "<group>"; };
-		037953B556B9AEED515C4DC2 /* Pods-TactApp-TactAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TactApp-TactAppTests.debug.xcconfig"; path = "Target Support Files/Pods-TactApp-TactAppTests/Pods-TactApp-TactAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		13A17ABF4F98A591E0E69AE5 /* Pods-TactApp-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TactApp-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-TactApp-tvOS/Pods-TactApp-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* TactApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TactApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = TactApp/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = TactApp/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = TactApp/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = TactApp/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = TactApp/main.m; sourceTree = "<group>"; };
-		1D2EF7E5EB1B27EBCF434DEB /* libPods-TactApp-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TactApp-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2078F9A4ECD5085B6A2F24FF /* Pods-TactApp-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TactApp-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-TactApp-tvOSTests/Pods-TactApp-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
-		2260C756705D597E866717BD /* Pods-TactApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TactApp.debug.xcconfig"; path = "Target Support Files/Pods-TactApp/Pods-TactApp.debug.xcconfig"; sourceTree = "<group>"; };
-		27EF94E635924C33A9889417 /* Fontisto.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Fontisto.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf"; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* TactApp-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TactApp-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* TactApp-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TactApp-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		47A589953B9A488F8207D91D /* Ionicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Ionicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
-		4D675986F3E34CA08771D03B /* FontAwesome.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; };
-		53062E02EC824A3491B35B1C /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Solid.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf"; sourceTree = "<group>"; };
-		57137391AFD02BE6CF8B9EAE /* libPods-TactApp-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TactApp-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		61BCB4787F634924BD347050 /* Octicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Octicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; };
-		62435AF45C61D6A17750F11C /* Pods-TactApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TactApp.release.xcconfig"; path = "Target Support Files/Pods-TactApp/Pods-TactApp.release.xcconfig"; sourceTree = "<group>"; };
-		65D3E6BCF3354D88B0F9BE28 /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Brands.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf"; sourceTree = "<group>"; };
-		691C6BB8DB6932B2AEF80CBD /* libPods-TactApp-TactAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TactApp-TactAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		69FA8BC7EFA6B8F60ED4C5C1 /* Pods-TactApp-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TactApp-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-TactApp-tvOS/Pods-TactApp-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
-		72904C05090E4626F55F599C /* Pods-TactApp-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TactApp-tvOS.release.xcconfig"; path = "Target Support Files/Pods-TactApp-tvOS/Pods-TactApp-tvOS.release.xcconfig"; sourceTree = "<group>"; };
-		758F655DCEF448028E763E3F /* AntDesign.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = AntDesign.ttf; path = "../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf"; sourceTree = "<group>"; };
-		7B192E2572D1432F91256FDE /* Zocial.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Zocial.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; };
+		3DACB36B0C596F57B73BF8FF /* Pods-TactApp-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TactApp-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-TactApp-tvOSTests/Pods-TactApp-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4C30D9D1F8B41309EC3708B1 /* libPods-TactApp-TactAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TactApp-TactAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = TactApp/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		8924DB89D2D096368672DE0B /* libPods-TactApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TactApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AC1496A8F2D3481A88DA461A /* EvilIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = EvilIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; };
-		ACCB8A6A54924032927DE402 /* Foundation.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Foundation.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
-		AFD25D228F1244CBB78ED6BE /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialCommunityIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; };
-		B2C66909EAA5E9AB75BE3C2F /* Pods-TactApp-TactAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TactApp-TactAppTests.release.xcconfig"; path = "Target Support Files/Pods-TactApp-TactAppTests/Pods-TactApp-TactAppTests.release.xcconfig"; sourceTree = "<group>"; };
-		B9D01BE61EB44B7987DA43A6 /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Regular.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; };
-		BC583E12E0344BAD9B06A2F8 /* MaterialIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
+		88F3D5E7D77F053F8A068687 /* libPods-TactApp-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TactApp-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B1D738B80D749F1BC11E270 /* libPods-TactApp-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TactApp-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C511B1C74B3781F3EE7E79B /* Pods-TactApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TactApp.release.xcconfig"; path = "Target Support Files/Pods-TactApp/Pods-TactApp.release.xcconfig"; sourceTree = "<group>"; };
+		AE62B6CA9F55D116AECA4C9F /* Pods-TactApp-TactAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TactApp-TactAppTests.debug.xcconfig"; path = "Target Support Files/Pods-TactApp-TactAppTests/Pods-TactApp-TactAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B345554DC8D52ABFDEECD755 /* Pods-TactApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TactApp.debug.xcconfig"; path = "Target Support Files/Pods-TactApp/Pods-TactApp.debug.xcconfig"; sourceTree = "<group>"; };
 		C110763A250E0AC600F72A3A /* Feather.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Feather.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Feather.ttf"; sourceTree = "<group>"; };
-		C31FB9024B644D87966A2708 /* Entypo.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Entypo.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; };
-		DB401676D09C8799404BE0FA /* Pods-TactApp-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TactApp-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-TactApp-tvOSTests/Pods-TactApp-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CC8081DFEECDD705FA3E198F /* Pods-TactApp-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TactApp-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-TactApp-tvOSTests/Pods-TactApp-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		D32A525FD7CA0F022413E651 /* Pods-TactApp-TactAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TactApp-TactAppTests.release.xcconfig"; path = "Target Support Files/Pods-TactApp-TactAppTests/Pods-TactApp-TactAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		E40611F36FA171589D4850DB /* libPods-TactApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TactApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
-		EDC7259B25E54AE3952BA69E /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SimpleLineIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; };
+		EF5F6BF9F021B146C2CB51F5 /* Pods-TactApp-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TactApp-tvOS.release.xcconfig"; path = "Target Support Files/Pods-TactApp-tvOS/Pods-TactApp-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,7 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E555C0FB0EC37FAACCDBF88B /* libPods-TactApp-TactAppTests.a in Frameworks */,
+				90A64C7AEAB1CB6AC88BF300 /* libPods-TactApp-TactAppTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,7 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C34C67C72026815C6DFB8B6E /* libPods-TactApp.a in Frameworks */,
+				8F4DFE117460322E9533A071 /* libPods-TactApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,7 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93EFE0D7EB8A04A05192E543 /* libPods-TactApp-tvOS.a in Frameworks */,
+				C7CF2F1CD01DDC8D1E0ABEC4 /* libPods-TactApp-tvOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,7 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E1DC8B8809715C5DAD905FB /* libPods-TactApp-tvOSTests.a in Frameworks */,
+				BB334E3EF4D11DC52B937B3A /* libPods-TactApp-tvOSTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,10 +141,10 @@
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
-				8924DB89D2D096368672DE0B /* libPods-TactApp.a */,
-				691C6BB8DB6932B2AEF80CBD /* libPods-TactApp-TactAppTests.a */,
-				1D2EF7E5EB1B27EBCF434DEB /* libPods-TactApp-tvOS.a */,
-				57137391AFD02BE6CF8B9EAE /* libPods-TactApp-tvOSTests.a */,
+				E40611F36FA171589D4850DB /* libPods-TactApp.a */,
+				4C30D9D1F8B41309EC3708B1 /* libPods-TactApp-TactAppTests.a */,
+				8B1D738B80D749F1BC11E270 /* libPods-TactApp-tvOS.a */,
+				88F3D5E7D77F053F8A068687 /* libPods-TactApp-tvOSTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -198,7 +165,6 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BF1D98ACAB6B27ECC30291A9 /* Pods */,
-				F2E5112DB4314B02938ABD12 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -219,14 +185,14 @@
 		BF1D98ACAB6B27ECC30291A9 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				2260C756705D597E866717BD /* Pods-TactApp.debug.xcconfig */,
-				62435AF45C61D6A17750F11C /* Pods-TactApp.release.xcconfig */,
-				037953B556B9AEED515C4DC2 /* Pods-TactApp-TactAppTests.debug.xcconfig */,
-				B2C66909EAA5E9AB75BE3C2F /* Pods-TactApp-TactAppTests.release.xcconfig */,
-				69FA8BC7EFA6B8F60ED4C5C1 /* Pods-TactApp-tvOS.debug.xcconfig */,
-				72904C05090E4626F55F599C /* Pods-TactApp-tvOS.release.xcconfig */,
-				DB401676D09C8799404BE0FA /* Pods-TactApp-tvOSTests.debug.xcconfig */,
-				2078F9A4ECD5085B6A2F24FF /* Pods-TactApp-tvOSTests.release.xcconfig */,
+				B345554DC8D52ABFDEECD755 /* Pods-TactApp.debug.xcconfig */,
+				9C511B1C74B3781F3EE7E79B /* Pods-TactApp.release.xcconfig */,
+				AE62B6CA9F55D116AECA4C9F /* Pods-TactApp-TactAppTests.debug.xcconfig */,
+				D32A525FD7CA0F022413E651 /* Pods-TactApp-TactAppTests.release.xcconfig */,
+				13A17ABF4F98A591E0E69AE5 /* Pods-TactApp-tvOS.debug.xcconfig */,
+				EF5F6BF9F021B146C2CB51F5 /* Pods-TactApp-tvOS.release.xcconfig */,
+				3DACB36B0C596F57B73BF8FF /* Pods-TactApp-tvOSTests.debug.xcconfig */,
+				CC8081DFEECDD705FA3E198F /* Pods-TactApp-tvOSTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -239,28 +205,6 @@
 			name = Fonts;
 			sourceTree = "<group>";
 		};
-		F2E5112DB4314B02938ABD12 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				758F655DCEF448028E763E3F /* AntDesign.ttf */,
-				C31FB9024B644D87966A2708 /* Entypo.ttf */,
-				AC1496A8F2D3481A88DA461A /* EvilIcons.ttf */,
-				4D675986F3E34CA08771D03B /* FontAwesome.ttf */,
-				65D3E6BCF3354D88B0F9BE28 /* FontAwesome5_Brands.ttf */,
-				B9D01BE61EB44B7987DA43A6 /* FontAwesome5_Regular.ttf */,
-				53062E02EC824A3491B35B1C /* FontAwesome5_Solid.ttf */,
-				27EF94E635924C33A9889417 /* Fontisto.ttf */,
-				ACCB8A6A54924032927DE402 /* Foundation.ttf */,
-				47A589953B9A488F8207D91D /* Ionicons.ttf */,
-				AFD25D228F1244CBB78ED6BE /* MaterialCommunityIcons.ttf */,
-				BC583E12E0344BAD9B06A2F8 /* MaterialIcons.ttf */,
-				61BCB4787F634924BD347050 /* Octicons.ttf */,
-				EDC7259B25E54AE3952BA69E /* SimpleLineIcons.ttf */,
-				7B192E2572D1432F91256FDE /* Zocial.ttf */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -268,11 +212,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "TactAppTests" */;
 			buildPhases = (
-				D354009A5AB70DADA9199F80 /* [CP] Check Pods Manifest.lock */,
+				98EA4412A875D06105FE9829 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				79C4B04262B403386F1EECE1 /* [CP] Copy Pods Resources */,
+				EB2113055409BF692E6F3287 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -288,13 +232,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "TactApp" */;
 			buildPhases = (
-				71938CE66B2146F484712ACD /* [CP] Check Pods Manifest.lock */,
+				385AE2A5768A6CA83E8641B8 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
-				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				E60324E7F8DB48FF8B2FD226 /* [CP] Copy Pods Resources */,
+				C9B42113717B6CD5161E879E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -309,7 +252,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "TactApp-tvOS" */;
 			buildPhases = (
-				00816ABCD833074F73B41F89 /* [CP] Check Pods Manifest.lock */,
+				C83BFED812C61F0D5171C14A /* [CP] Check Pods Manifest.lock */,
 				FD10A7F122414F3F0027D42C /* Start Packager */,
 				2D02E4771E0B4A5D006451C7 /* Sources */,
 				2D02E4781E0B4A5D006451C7 /* Frameworks */,
@@ -329,7 +272,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "TactApp-tvOSTests" */;
 			buildPhases = (
-				0EC8D5D4BD76D45705EAA00B /* [CP] Check Pods Manifest.lock */,
+				FDA33920722570BD72165897 /* [CP] Check Pods Manifest.lock */,
 				2D02E48C1E0B4A5D006451C7 /* Sources */,
 				2D02E48D1E0B4A5D006451C7 /* Frameworks */,
 				2D02E48E1E0B4A5D006451C7 /* Resources */,
@@ -399,31 +342,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		13B07F8E1A680F5B00A75B9A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
-				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
-				556AFE044129402E9CE21720 /* AntDesign.ttf in Resources */,
-				08C43F0665964F0B92D8C526 /* Entypo.ttf in Resources */,
-				A21AAF994C934088A1C4DC00 /* EvilIcons.ttf in Resources */,
-				9560A344666741FAA21CF31C /* FontAwesome.ttf in Resources */,
-				9AC59AAD6AE34E97A61E7587 /* FontAwesome5_Brands.ttf in Resources */,
-				3AD53B0D33CC4AF3B7AF6BAC /* FontAwesome5_Regular.ttf in Resources */,
-				46126FCD250E10CD00267096 /* Feather.ttf in Resources */,
-				43B959CE720047268517DD15 /* FontAwesome5_Solid.ttf in Resources */,
-				8409FEBD5D234EB6A4EEA95A /* Fontisto.ttf in Resources */,
-				E06ACD083A12428B806DC635 /* Foundation.ttf in Resources */,
-				8AD629F80CBE45B5BA8EEBDD /* Ionicons.ttf in Resources */,
-				70246887BAE5441DB57E70FD /* MaterialCommunityIcons.ttf in Resources */,
-				C51957FDBA954679AD759A48 /* MaterialIcons.ttf in Resources */,
-				3676C0134C5149B1832D26FC /* Octicons.ttf in Resources */,
-				D5880BB0423046D48B34B69E /* SimpleLineIcons.ttf in Resources */,
-				272B8B0E16E14168A4927C30 /* Zocial.ttf in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		2D02E4791E0B4A5D006451C7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -442,28 +360,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		00816ABCD833074F73B41F89 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-TactApp-tvOS-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -477,28 +373,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
-		};
-		0EC8D5D4BD76D45705EAA00B /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-TactApp-tvOSTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
 		};
 		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -514,7 +388,7 @@
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
 		};
-		71938CE66B2146F484712ACD /* [CP] Check Pods Manifest.lock */ = {
+		385AE2A5768A6CA83E8641B8 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -536,57 +410,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		79C4B04262B403386F1EECE1 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TactApp-TactAppTests/Pods-TactApp-TactAppTests-resources.sh",
-				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf",
-				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Entypo.ttf",
-				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf",
-				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Feather.ttf",
-				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf",
-				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf",
-				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf",
-				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf",
-				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf",
-				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Foundation.ttf",
-				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf",
-				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf",
-				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf",
-				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Octicons.ttf",
-				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf",
-				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Zocial.ttf",
-				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AntDesign.ttf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Entypo.ttf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/EvilIcons.ttf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Feather.ttf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome.ttf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome5_Brands.ttf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome5_Regular.ttf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome5_Solid.ttf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Fontisto.ttf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Foundation.ttf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Ionicons.ttf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MaterialCommunityIcons.ttf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MaterialIcons.ttf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Octicons.ttf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SimpleLineIcons.ttf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Zocial.ttf",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AccessibilityResources.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TactApp-TactAppTests/Pods-TactApp-TactAppTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D354009A5AB70DADA9199F80 /* [CP] Check Pods Manifest.lock */ = {
+		98EA4412A875D06105FE9829 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -608,7 +432,29 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E60324E7F8DB48FF8B2FD226 /* [CP] Copy Pods Resources */ = {
+		C83BFED812C61F0D5171C14A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TactApp-tvOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C9B42113717B6CD5161E879E /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -658,6 +504,56 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TactApp/Pods-TactApp-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		EB2113055409BF692E6F3287 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TactApp-TactAppTests/Pods-TactApp-TactAppTests-resources.sh",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Entypo.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Feather.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Foundation.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Octicons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Zocial.ttf",
+				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AntDesign.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Entypo.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/EvilIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Feather.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome5_Brands.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome5_Regular.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome5_Solid.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Fontisto.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Foundation.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Ionicons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MaterialCommunityIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MaterialIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Octicons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SimpleLineIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Zocial.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AccessibilityResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TactApp-TactAppTests/Pods-TactApp-TactAppTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -694,6 +590,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "export RCT_METRO_PORT=\"${RCT_METRO_PORT:=8081}\"\necho \"export RCT_METRO_PORT=${RCT_METRO_PORT}\" > \"${SRCROOT}/../node_modules/react-native/scripts/.packager.env\"\nif [ -z \"${RCT_NO_LAUNCH_PACKAGER+xxx}\" ] ; then\n  if nc -w 5 -z localhost ${RCT_METRO_PORT} ; then\n    if ! curl -s \"http://localhost:${RCT_METRO_PORT}/status\" | grep -q \"packager-status:running\" ; then\n      echo \"Port ${RCT_METRO_PORT} already in use, packager is either not running or not running correctly\"\n      exit 2\n    fi\n  else\n    open \"$SRCROOT/../node_modules/react-native/scripts/launchPackager.command\" || echo \"Can't start packager automatically\"\n  fi\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FDA33920722570BD72165897 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TactApp-tvOSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -751,7 +669,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 037953B556B9AEED515C4DC2 /* Pods-TactApp-TactAppTests.debug.xcconfig */;
+			baseConfigurationReference = AE62B6CA9F55D116AECA4C9F /* Pods-TactApp-TactAppTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -774,7 +692,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B2C66909EAA5E9AB75BE3C2F /* Pods-TactApp-TactAppTests.release.xcconfig */;
+			baseConfigurationReference = D32A525FD7CA0F022413E651 /* Pods-TactApp-TactAppTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -794,7 +712,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2260C756705D597E866717BD /* Pods-TactApp.debug.xcconfig */;
+			baseConfigurationReference = B345554DC8D52ABFDEECD755 /* Pods-TactApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -817,7 +735,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 62435AF45C61D6A17750F11C /* Pods-TactApp.release.xcconfig */;
+			baseConfigurationReference = 9C511B1C74B3781F3EE7E79B /* Pods-TactApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -838,7 +756,7 @@
 		};
 		2D02E4971E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 69FA8BC7EFA6B8F60ED4C5C1 /* Pods-TactApp-tvOS.debug.xcconfig */;
+			baseConfigurationReference = 13A17ABF4F98A591E0E69AE5 /* Pods-TactApp-tvOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -866,7 +784,7 @@
 		};
 		2D02E4981E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 72904C05090E4626F55F599C /* Pods-TactApp-tvOS.release.xcconfig */;
+			baseConfigurationReference = EF5F6BF9F021B146C2CB51F5 /* Pods-TactApp-tvOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -894,7 +812,7 @@
 		};
 		2D02E4991E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DB401676D09C8799404BE0FA /* Pods-TactApp-tvOSTests.debug.xcconfig */;
+			baseConfigurationReference = 3DACB36B0C596F57B73BF8FF /* Pods-TactApp-tvOSTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -921,7 +839,7 @@
 		};
 		2D02E49A1E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2078F9A4ECD5085B6A2F24FF /* Pods-TactApp-tvOSTests.release.xcconfig */;
+			baseConfigurationReference = CC8081DFEECDD705FA3E198F /* Pods-TactApp-tvOSTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;

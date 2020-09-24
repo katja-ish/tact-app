@@ -1,11 +1,10 @@
 import React from 'react';
 import { Text, View, SafeAreaView, StyleSheet, Button } from 'react-native';
-import { NavigationContainer } from '@react-navigation/native';
 
 function SettingsDetails({ navigation }: any) {
   return (
-    <SafeAreaView>
-      <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
+      <View>
         <Text style={styles.text}>SettingsDetails Screen</Text>
         <Button title="Go to Account" onPress={() => navigation.navigate('Account')} />
       </View>
@@ -16,7 +15,7 @@ function SettingsDetails({ navigation }: any) {
 const styles = StyleSheet.create({
   container: {
     backgroundColor: 'lightgreen',
-    height: '100%',
+    flex: 1,
   },
   text: {
     fontSize: 32,

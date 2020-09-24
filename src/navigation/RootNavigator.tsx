@@ -1,10 +1,13 @@
 import React from 'react';
 import { FriendList, ConversationsList, Settings } from '@app/screens';
 import { ScreenNames, RootStackParamList } from '@app/types';
+import { enableScreens } from 'react-native-screens';
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
 import AnimatedTabBar from './AnimatedTabBar';
 
 const Tab = createMaterialTopTabNavigator<RootStackParamList>();
+
+enableScreens();
 
 export default () => {
   return (
