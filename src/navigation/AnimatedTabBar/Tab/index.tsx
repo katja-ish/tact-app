@@ -59,10 +59,10 @@ const Tab: React.FC<TabProps> = ({
     outputRange: labelTranslateOutput,
   });
 
-  const backgroundOutput = inputRange.map((i) => (i === index ? '#E7C741' : '#3B3B3B'));
+  const backgroundOutput = inputRange.map((i) => (i === index ? '#FFFFFF' : '#333333'));
   const backgroundColor = interpolateColors(position, inputRange, backgroundOutput);
 
-  const iconColorOutput = inputRange.map((i) => (i === index ? '#3B3B3B' : '#FFFFFF'));
+  const iconColorOutput = inputRange.map((i) => (i === index ? '#333333' : '#FFFFFF'));
   const iconColor = interpolateColors(position, inputRange, iconColorOutput);
 
   const iconName = getIconName(route.name);
