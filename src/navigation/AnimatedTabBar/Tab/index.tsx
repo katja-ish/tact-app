@@ -1,12 +1,13 @@
 import React from 'react';
 import { MaterialTopTabBarProps } from '@react-navigation/material-top-tabs';
-import { TouchableOpacity, StyleSheet } from 'react-native';
+import { StyleSheet } from 'react-native';
+import { TouchableOpacity } from 'react-native-gesture-handler';
 import Animated from 'react-native-reanimated';
 import Icon from 'react-native-vector-icons/Feather';
 
 import { getIconLabel, getIconName, interpolateColors } from '@app/utils';
 import { RouteType } from '@app/types';
-import { TouchableWithoutFeedback } from 'react-native-gesture-handler';
+import { Colors } from '@app/theme';
 
 interface TabProps extends MaterialTopTabBarProps {
   route: RouteType;
@@ -32,77 +33,58 @@ const Tab: React.FC<TabProps> = ({
   //     ? options.title
   //     : route.name;
 
-  const label = getIconLabel(route.name);
+  // const label = getIconLabel(route.name);
   const isFocused = state.index === index;
 
   const inputRange = state.routes.map((_, i) => i);
   const opacity = Animated.interpolate(position, {
     inputRange,
-    outputRange: inputRange.map((i) => (i === index ? 1 : 0)),
+    outputRange: inputRange.map((i) => (i === index ? 1 : 0.3)),
   });
 
-  const widthOutput = inputRange.map((i) => (i === index ? 120 : 50));
-  const width = Animated.interpolate(position, {
-    inputRange,
-    outputRange: widthOutput,
-  });
+  // const widthOutput = inputRange.map((i) => (i === index ? 120 : 50));
+  // const width = Animated.interpolate(position, {
+  //   inputRange,
+  //   outputRange: widthOutput,
+  // });
 
-  const scaleOutput = inputRange.map((i) => (i === index ? 1.2 : 1));
-  const scale = Animated.interpolate(position, {
-    inputRange,
-    outputRange: scaleOutput,
-  });
+  // const scaleOutput = inputRange.map((i) => (i === index ? 1.2 : 1));
+  // const scale = Animated.interpolate(position, {
+  //   inputRange,
+  //   outputRange: scaleOutput,
+  // });
 
-  const labelTranslateOutput = inputRange.map((i) => (i === index ? 50 : 100));
-  const labelTranslate = Animated.interpolate(position, {
-    inputRange,
-    outputRange: labelTranslateOutput,
-  });
+  // const labelTranslateOutput = inputRange.map((i) => (i === index ? 50 : 100));
+  // const labelTranslate = Animated.interpolate(position, {
+  //   inputRange,
+  //   outputRange: labelTranslateOutput,
+  // });
 
-  const backgroundOutput = inputRange.map((i) => (i === index ? '#FFFFFF' : '#333333'));
-  const backgroundColor = interpolateColors(position, inputRange, backgroundOutput);
-
-  const iconColorOutput = inputRange.map((i) => (i === index ? '#333333' : '#FFFFFF'));
-  const iconColor = interpolateColors(position, inputRange, iconColorOutput);
+  // const backgroundOutput = inputRange.map((i) => (i === index ? '#FFFFFF' : Colors.SOFT_BLACK));
+  // const backgroundColor = interpolateColors(position, inputRange, backgroundOutput);
 
   const iconName = getIconName(route.name);
 
   return (
-    <TouchableWithoutFeedback
+    <TouchableOpacity
       accessibilityRole="button"
-      accessibilityLabel={options.tabBarAccessibilityLabel}
+      activeOpacity={0.8}
       onPress={() => onPress(route, isFocused)}
       onLongPress={() => onLongPress(route)}>
-      <Animated.View
-        style={[
-          styles.tabWrap,
-          // @ts-ignore
-          {
-            backgroundColor,
-            width,
-            transform: [{ scale }],
-          },
-        ]}>
-        <Animated.Text
-          // @ts-ignore
-          style={{
-            color: iconColor,
-          }}>
-          <Icon name={iconName} size={24} />
-        </Animated.Text>
-        <Animated.Text
-          style={[styles.label, { opacity, transform: [{ translateX: labelTranslate }] }]}>
-          {label}
-        </Animated.Text>
-      </Animated.View>
-    </TouchableWithoutFeedback>
+      <Animated.Text
+        // @ts-ignore
+        style={{
+          opacity,
+        }}>
+        <Icon name={iconName} size={24} />
+      </Animated.Text>
+    </TouchableOpacity>
   );
 };
 export default Tab;
 
 const styles = StyleSheet.create({
   tabWrap: {
-    // flex: 1,
     backgroundColor: 'transparent',
     height: 50,
     borderRadius: 25,
