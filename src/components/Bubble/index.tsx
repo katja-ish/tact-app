@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react';
 import { View, StyleSheet, Animated, Easing } from 'react-native';
 import { BlurView } from '@react-native-community/blur';
-import { screenWidth, Text } from '@app/theme';
+import { Text } from '@app/theme';
+import { BubbleSubstractDown, BubbleSubstractUp } from '@app/assets/icons';
 
 interface IBubble {
   text: string;
@@ -10,7 +11,7 @@ interface IBubble {
 
 const Bubble: React.FC<IBubble> = ({ text, direction = 'left' }) => {
   const bubbleDirection = direction === 'left' ? 'row' : 'row-reverse';
-
+  const bubbleRotate = direction === 'left' ? '0deg' : '-180deg';
   const scaleValue = new Animated.Value(0);
 
   const scale = scaleValue.interpolate({
@@ -23,19 +24,29 @@ const Bubble: React.FC<IBubble> = ({ text, direction = 'left' }) => {
       toValue: 1,
       duration: 1500,
       easing: Easing.linear,
-      useNativeDriver: false,
+      useNativeDriver: true,
     }).start();
   }, []);
 
   return (
     <Animated.View
-      style={[styles.container, { flexDirection: bubbleDirection, transform: [{ scale }] }]}>
-      <BlurView
-        style={styles.line}
-        blurType="light"
-        blurAmount={10}
-        reducedTransparencyFallbackColor="white"
-      />
+      style={[
+        styles.container,
+        {
+          flexDirection: bubbleDirection,
+          transform: [{ scale }],
+        },
+      ]}>
+      <View style={{ transform: [{ rotate: bubbleRotate }] }}>
+        <BubbleSubstractDown style={styles.substractDown} />
+        <BubbleSubstractUp style={styles.substractUp} />
+        <BlurView
+          style={styles.line}
+          blurType="light"
+          blurAmount={10}
+          reducedTransparencyFallbackColor="white"
+        />
+      </View>
       <BlurView
         style={styles.main}
         blurType="light"
@@ -56,6 +67,16 @@ const styles = StyleSheet.create({
     width: 25,
     height: 10,
     backgroundColor: 'rgba(255, 255, 255, 0.5)',
+  },
+  substractDown: {
+    position: 'absolute',
+    top: 10,
+    left: 19,
+  },
+  substractUp: {
+    position: 'absolute',
+    top: -6,
+    left: 19,
   },
   main: {
     minWidth: 110,

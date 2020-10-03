@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, View, SafeAreaView, StyleSheet, Image } from 'react-native';
+import { Text, SafeAreaView, StyleSheet, Image } from 'react-native';
 import Bubble from '@app/components/Bubble';
 
 const ConversationsList = () => {
