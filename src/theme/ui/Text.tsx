@@ -1,11 +1,13 @@
 import React from 'react';
 import { StyleSheet, Text as TextBase, TextProps } from 'react-native';
-import { Fonts } from '@app/theme/fonts';
+import { Fonts, FontSize, FontStyle } from '@app/theme/fonts';
 
-interface IProps extends TextProps {}
+interface IProps extends TextProps {
+  fontSize?: 'ultraSmall' | 'small' | 'medium' | 'large';
+}
 
-const Text: React.FC<IProps> = ({ style, ...rest }) => {
-  return <TextBase {...rest} style={[styles.font, style]} />;
+const Text: React.FC<IProps> = ({ style, fontSize = 'medium', ...rest }) => {
+  return <TextBase {...rest} style={[styles.font, FontSize[fontSize], style]} />;
 };
 
 export default Text;
