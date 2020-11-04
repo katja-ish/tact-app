@@ -13,7 +13,7 @@ export default StyleSheet.create({
   },
   textWrap: { justifyContent: 'space-between' },
   name: {
-    color: Colors.SOFT_BLACK,
+    color: Colors.STRONG_BLACK,
   },
   avatar: {
     width: 36,

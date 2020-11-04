@@ -60,7 +60,7 @@ const Tab: React.FC<TabProps> = ({
   //   outputRange: labelTranslateOutput,
   // });
 
-  // const backgroundOutput = inputRange.map((i) => (i === index ? '#FFFFFF' : Colors.SOFT_BLACK));
+  // const backgroundOutput = inputRange.map((i) => (i === index ? '#FFFFFF' : Colors.STRONG_BLACK));
   // const backgroundColor = interpolateColors(position, inputRange, backgroundOutput);
 
   const iconName = getIconName(route.name);

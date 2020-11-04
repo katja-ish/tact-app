@@ -1,6 +1,7 @@
 import React from 'react';
-import { Text } from '@app/theme';
-import { View, SafeAreaView, StyleSheet, TextInput } from 'react-native';
+import { Text, Colors } from '@app/theme';
+import { View, SafeAreaView, StyleSheet, TextInput, Alert } from 'react-native';
+import Button from '@app/components/Button';
 
 const Account = () => {
   const [value, onChangeText] = React.useState('Katja Nikitina');
@@ -21,6 +22,7 @@ const Account = () => {
           value={value}
           maxLength={33}
         />
+        <Button text={'Сохранить'} />
       </View>
     </SafeAreaView>
   );
@@ -56,6 +58,10 @@ const styles = StyleSheet.create({
     borderStyle: 'dashed',
     borderWidth: 1,
     marginBottom: 20,
+  },
+  button: {
+    backgroundColor: Colors.LAZURE,
+    color: Colors.WHITE,
   },
 });
 

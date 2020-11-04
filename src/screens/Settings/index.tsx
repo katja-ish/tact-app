@@ -10,9 +10,9 @@ const Settings = () => {
       <Stack.Screen
         name="SettingsDetails"
         component={SettingsDetails}
-        options={{ title: 'Settings' }}
+        options={{ title: 'Настройки' }}
       />
-      <Stack.Screen name="Account" component={Account} />
+      <Stack.Screen name="Account" component={Account} options={{ title: 'Аккаунт' }} />
     </Stack.Navigator>
   );
 };

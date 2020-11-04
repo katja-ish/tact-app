@@ -36,13 +36,12 @@ const FriendList = () => {
 const styles = StyleSheet.create({
   container: {
     backgroundColor: 'white',
-    flex: 1,
   },
   list: {
     // borderRadius: 10,
   },
   title: {
-    color: Colors.SOFT_BLACK,
+    color: Colors.STRONG_BLACK,
     paddingHorizontal: 20,
     paddingVertical: 10,
   },

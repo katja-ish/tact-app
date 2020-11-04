@@ -4,8 +4,6 @@ import { View, TouchableOpacity } from 'react-native';
 import { StyleSheet } from 'react-native';
 import { Colors } from '@app/theme';
 
-import { getNumberFromContact } from '@app/utils';
-
 interface ConversationItemProps {
   item: any;
 }
@@ -38,7 +36,7 @@ const styles = StyleSheet.create({
   },
   textWrap: { justifyContent: 'space-between' },
   name: {
-    color: Colors.SOFT_BLACK,
+    color: Colors.STRONG_BLACK,
   },
   avatar: {
     width: 36,

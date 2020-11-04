@@ -13,12 +13,12 @@ const AnimatedTabBar: React.FC<MaterialTopTabBarProps> = (props) => {
 
   //We attach the x,y coordinates of the position to the transform property of the indicator so we can freely animate it to any position of our choice.
   const animStyles = {
-    top: 45,
+    top: 60,
     bottom: 0,
     position: 'absolute',
     width: 6,
     height: 6,
-    backgroundColor: Colors.SOFT_BLACK,
+    backgroundColor: Colors.LAZURE,
     borderRadius: 50,
     transform: position.getTranslateTransform(),
   };
@@ -99,7 +99,7 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     backgroundColor: '#FFF',
     bottom: 20,
-    height: 50,
+    height: 70,
     paddingHorizontal,
     // transform: [{ translateX: (screenWidth - 350) / 2 }],
     // borderColor: '#fff',
