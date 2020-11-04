@@ -6,7 +6,7 @@ function SettingsDetails({ navigation }: any) {
     <SafeAreaView style={styles.container}>
       <View>
         <Text style={styles.text}>SettingsDetails Screen</Text>
-        <Button title="Go to Account" onPress={() => navigation.navigate('Account')} />
+        <Button title="Изменить аккаунт" onPress={() => navigation.navigate('Account')} />
       </View>
     </SafeAreaView>
   );
@@ -14,7 +14,7 @@ function SettingsDetails({ navigation }: any) {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: 'lightgreen',
+    backgroundColor: 'white',
     flex: 1,
   },
   text: {

@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import { Text, View, SafeAreaView, StyleSheet, FlatList } from 'react-native';
+import { View, SafeAreaView, StyleSheet, FlatList } from 'react-native';
+import { Text, Colors } from '@app/theme';
 
 import Contacts from 'react-native-contacts';
 import FriendItem from './components/FriendItem';
+// import { Colors } from 'react-native/Libraries/NewAppScreen';
 
 const FriendList = () => {
   const [contacts, setContacts] = useState([]);
@@ -18,11 +20,14 @@ const FriendList = () => {
 
   return (
     <SafeAreaView style={styles.container}>
-      <Text style={styles.text}>FriendList Screen</Text>
+      <Text fontSize="large" style={styles.title}>
+        Мои контакты
+      </Text>
       <FlatList
         data={contacts}
         keyExtractor={(item) => `contact${item.recordID}`}
         renderItem={renderContact}
+        style={styles.list}
       />
     </SafeAreaView>
   );
@@ -30,11 +35,16 @@ const FriendList = () => {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: 'lightyellow',
+    backgroundColor: 'white',
     flex: 1,
   },
-  text: {
-    fontSize: 32,
+  list: {
+    // borderRadius: 10,
+  },
+  title: {
+    color: Colors.SOFT_BLACK,
+    paddingHorizontal: 20,
+    paddingVertical: 10,
   },
 });
 

@@ -8,8 +8,8 @@ export default StyleSheet.create({
     paddingVertical: 16,
     paddingHorizontal: 20,
     flexDirection: 'row',
-    // borderColor:
-    // borderTopWidth:
+    borderBottomColor: Colors.STROKE,
+    borderBottomWidth: 1,
   },
   textWrap: { justifyContent: 'space-between' },
   name: {
@@ -19,7 +19,7 @@ export default StyleSheet.create({
     width: 36,
     height: 36,
     borderRadius: 50,
-    backgroundColor: 'springgreen',
+    backgroundColor: 'black',
     marginRight: 16,
   },
   text: {

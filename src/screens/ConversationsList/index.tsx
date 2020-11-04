@@ -14,7 +14,7 @@ const ConversationsList = () => {
         resizeMode="cover"
         style={styles.absolute}
       />
-      <Text style={styles.text}>ConversationsList Screen</Text>
+      <Text style={styles.text}>Список бесед</Text>
       <Bubble text="я самая хорошая девочка" direction="right" />
       <Bubble text="я знаю" direction="left" />
     </SafeAreaView>

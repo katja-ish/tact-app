@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, View, SafeAreaView, StyleSheet } from 'react-native';
+import { Text, SafeAreaView, View, StyleSheet } from 'react-native';
 
 const Conversation = () => {
   return (

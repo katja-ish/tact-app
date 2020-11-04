@@ -3,11 +3,9 @@ import { StyleSheet, TextStyle } from 'react-native';
 export const Fonts = StyleSheet.create({
   normal: {
     fontWeight: 'normal',
-    // fontFamily: 'Editorial Grotesk',
   },
   bold: {
     fontWeight: 'bold',
-    // fontFamily: 'Editorial Grotesk',
   },
 });
 
@@ -25,8 +23,8 @@ export const FontSize = StyleSheet.create({
     lineHeight: 18,
   } as TextStyle,
   large: {
-    fontSize: 17,
-    lineHeight: 20,
+    fontSize: 34,
+    lineHeight: 41,
   } as TextStyle,
 });
 
