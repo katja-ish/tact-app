@@ -5,7 +5,7 @@ const Conversation = () => {
   return (
     <SafeAreaView style={styles.container}>
       <View>
-        <Text style={styles.text}>Conversation Screen</Text>
+        <Text style={styles.text}>Conversation</Text>
       </View>
     </SafeAreaView>
   );

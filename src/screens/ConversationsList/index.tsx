@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { Text, Colors } from '@app/theme';
 import { SafeAreaView, View, StyleSheet, FlatList } from 'react-native';
-import Contacts from 'react-native-contacts';
 import ConversationItem from './components/ConversationItem';
+import Contacts from 'react-native-contacts';
+
+import { createStackNavigator } from '@react-navigation/stack';
 
 const ConversationsList = () => {
   const [contacts, setContacts] = useState([]);
@@ -14,7 +16,7 @@ const ConversationsList = () => {
     });
   }, []);
 
-  const renderConversation = ({ item }) => <ConversationItem item={item} />;
+  const renderConversation = ({ item, navigation }) => <ConversationItem item={item} />;
 
   return (
     <SafeAreaView style={styles.container}>

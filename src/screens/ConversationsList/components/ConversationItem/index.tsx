@@ -3,14 +3,22 @@ import { Text } from '@app/theme';
 import { View, TouchableOpacity } from 'react-native';
 import { StyleSheet } from 'react-native';
 import { Colors } from '@app/theme';
+import { useNavigation } from '@react-navigation/native';
 
 interface ConversationItemProps {
   item: any;
+  navigation: any;
 }
 
 const ConversationItem: React.FC<ConversationItemProps> = ({ item }) => {
+  const navigation = useNavigation();
+
   return (
-    <TouchableOpacity style={styles.container}>
+    <TouchableOpacity
+      style={styles.container}
+      onPress={() => {
+        navigation.navigate('Conversation');
+      }}>
       <View style={styles.avatar} />
       <View style={styles.textWrap}>
         <Text fontSize="medium" style={styles.name}>
