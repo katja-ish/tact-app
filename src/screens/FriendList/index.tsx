@@ -16,7 +16,7 @@ const FriendList = () => {
     });
   }, []);
 
-  const renderContact = ({ item, index }) => <FriendItem item={item} />;
+  const renderContact = ({ item }) => <FriendItem item={item} />;
 
   return (
     <SafeAreaView style={styles.container}>

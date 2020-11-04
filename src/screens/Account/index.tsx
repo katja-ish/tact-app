@@ -8,9 +8,13 @@ const Account = () => {
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.flex}>
-        <Text style={styles.label}>Аватар</Text>
+        <Text fontSize="medium" style={styles.label}>
+          Аватар
+        </Text>
         <View style={styles.avatar}></View>
-        <Text style={styles.label}>Имя</Text>
+        <Text fontSize="medium" style={styles.label}>
+          Имя
+        </Text>
         <TextInput
           style={styles.textInput}
           onChangeText={(text) => onChangeText(text)}

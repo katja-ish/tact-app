@@ -1,42 +1,52 @@
-import React from 'react';
-import { Text, SafeAreaView, StyleSheet, Image } from 'react-native';
-import Bubble from '@app/components/Bubble';
+import React, { useEffect, useState } from 'react';
+import { Text } from '@app/theme';
+import { SafeAreaView, StyleSheet, FlatList } from 'react-native';
+import Contacts from 'react-native-contacts';
+import ConversationItem from './components/ConversationItem';
 
 const ConversationsList = () => {
+  const [contacts, setContacts] = useState([]);
+  useEffect(() => {
+    Contacts.getAll().then((data) => {
+      if (Array.isArray(data)) {
+        setContacts(data);
+      }
+    });
+  }, []);
+
+  const renderConversation = ({ item }) => <ConversationItem item={item} />;
+
   return (
     <SafeAreaView style={styles.container}>
-      <Image
-        key={'blurryImage'}
-        source={{
-          uri:
-            'https://icdn.lenta.ru/images/2019/11/01/13/20191101130724350/pwa_vertical_1024_f1555b2890fcb39f7ecc85cf65e73fc5.png',
-        }}
-        resizeMode="cover"
-        style={styles.absolute}
+      <Text fontSize="large" style={styles.title}>
+        Список бесед
+      </Text>
+      <FlatList
+        data={contacts}
+        keyExtractor={(item) => `conversation${item.recordID}`}
+        renderItem={renderConversation}
+        style={styles.list}
       />
-      <Text style={styles.text}>Список бесед</Text>
-      <Bubble text="я самая хорошая девочка" direction="right" />
-      <Bubble text="я знаю" direction="left" />
     </SafeAreaView>
   );
 };
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: 'purple',
+    backgroundColor: 'white',
     flex: 1,
   },
-  text: {
-    fontSize: 32,
-    color: '#fff',
+  title: {
+    paddingHorizontal: 20,
   },
-  absolute: {
-    position: 'absolute',
-    top: 0,
-    left: 0,
-    bottom: 0,
-    right: 0,
-  },
+  list: {},
+  // absolute: {
+  //   position: 'absolute',
+  //   top: 0,
+  //   left: 0,
+  //   bottom: 0,
+  //   right: 0,
+  // },
 });
 
 export default ConversationsList;

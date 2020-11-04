@@ -1,11 +1,14 @@
 import React from 'react';
-import { Text, View, SafeAreaView, StyleSheet, Button } from 'react-native';
+import { Text } from '@app/theme';
+import { View, SafeAreaView, StyleSheet, Button } from 'react-native';
 
 function SettingsDetails({ navigation }: any) {
   return (
     <SafeAreaView style={styles.container}>
       <View>
-        <Text style={styles.text}>SettingsDetails Screen</Text>
+        <Text fontSize="large">SettingsDetails Screen</Text>
+        <Text fontSize="medium">Всякие настройки</Text>
+        <Text fontSize="medium">Еще настройки</Text>
         <Button title="Изменить аккаунт" onPress={() => navigation.navigate('Account')} />
       </View>
     </SafeAreaView>
@@ -16,9 +19,6 @@ const styles = StyleSheet.create({
   container: {
     backgroundColor: 'white',
     flex: 1,
-  },
-  text: {
-    fontSize: 32,
   },
 });
 
