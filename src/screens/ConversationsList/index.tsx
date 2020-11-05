@@ -3,24 +3,25 @@ import { Text, Colors } from '@app/theme';
 import { SafeAreaView, View, StyleSheet, FlatList } from 'react-native';
 import ConversationItem from './components/ConversationItem';
 import Contacts from 'react-native-contacts';
-
-import { createStackNavigator } from '@react-navigation/stack';
+import DragToSort from '@app/components/DragToSort';
+import DragTabs from '@app/components/DragTabs';
 
 const ConversationsList = () => {
-  const [contacts, setContacts] = useState([]);
-  useEffect(() => {
-    Contacts.getAll().then((data) => {
-      if (Array.isArray(data)) {
-        setContacts(data);
-      }
-    });
-  }, []);
+  // const [contacts, setContacts] = useState([]);
+  // useEffect(() => {
+  //   Contacts.getAll().then((data) => {
+  //     if (Array.isArray(data)) {
+  //       setContacts(data);
+  //     }
+  //   });
+  // }, []);
 
-  const renderConversation = ({ item, navigation }) => <ConversationItem item={item} />;
+  // const renderConversation = ({ item }) => <ConversationItem item={item} />;
 
   return (
     <SafeAreaView style={styles.container}>
-      <View style={styles.flex}>
+      {/* <ScrollView> */}
+      {/* <View style={styles.flex}>
         <Text fontSize="large" style={styles.title}>
           Список бесед
         </Text>
@@ -29,14 +30,19 @@ const ConversationsList = () => {
             About
           </Text>
         </View>
-      </View>
+      </View> */}
 
-      <FlatList
+      <DragTabs />
+      {/* <DragToSort /> */}
+      {/* <Chrome /> */}
+      {/* </ScrollView> */}
+
+      {/* <FlatList
         data={contacts}
         keyExtractor={(item) => `conversation${item.recordID}`}
         renderItem={renderConversation}
         style={styles.list}
-      />
+      /> */}
     </SafeAreaView>
   );
 };
@@ -45,7 +51,6 @@ const styles = StyleSheet.create({
   container: {
     backgroundColor: 'white',
     flex: 1,
-    position: 'relative',
   },
   flex: {
     flexDirection: 'row',
