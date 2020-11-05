@@ -22,6 +22,10 @@ export const FontSize = StyleSheet.create({
     fontSize: 15,
     lineHeight: 18,
   } as TextStyle,
+  big: {
+    fontSize: 18,
+    lineHeight: 20,
+  } as TextStyle,
   large: {
     fontSize: 34,
     lineHeight: 41,

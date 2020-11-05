@@ -2,7 +2,7 @@ import React from 'react';
 import { View, StyleSheet } from 'react-native';
 import { Text, Colors } from '@app/theme';
 
-const Button = ({ text }: any) => {
+const ButtonLight = ({ text }: any) => {
   return (
     <View style={styles.container}>
       <Text fontSize="big" style={styles.text}>
@@ -16,15 +16,16 @@ const styles = StyleSheet.create({
   container: {
     width: '100%',
     height: 50,
-    borderRadius: 8,
-    backgroundColor: Colors.BLUE_WINTHER,
+    borderRadius: 10,
+    backgroundColor: Colors.LIGHT_LAZURE,
     justifyContent: 'center',
     alignItems: 'center',
+    marginVertical: 5,
   },
   text: {
-    color: Colors.WHITE,
-    fontWeight: '500',
+    color: Colors.BLUE_WINTHER,
+    fontWeight: '400',
   },
 });
 
-export default Button;
+export default ButtonLight;
