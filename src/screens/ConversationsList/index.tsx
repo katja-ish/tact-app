@@ -3,18 +3,21 @@ import { Text, Colors } from '@app/theme';
 import { SafeAreaView, View, StyleSheet, FlatList } from 'react-native';
 import ConversationItem from './components/ConversationItem';
 import Contacts from 'react-native-contacts';
-import DragToSort from '@app/components/DragToSort';
 import DragTabs from '@app/components/DragTabs';
+import { useDispatch, useSelector } from '@app/hooks';
+import { setContacts } from '@app/store/contacts/actions';
 
 const ConversationsList = () => {
-  // const [contacts, setContacts] = useState([]);
-  // useEffect(() => {
-  //   Contacts.getAll().then((data) => {
-  //     if (Array.isArray(data)) {
-  //       setContacts(data);
-  //     }
-  //   });
-  // }, []);
+  const contacts = useSelector((state) => state.contacts.list);
+  const dispatch = useDispatch();
+  useEffect(() => {
+    Contacts.getAll().then((data) => {
+      if (Array.isArray(data)) {
+        dispatch(setContacts(data.slice(0, 5)));
+      }
+    });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   // const renderConversation = ({ item }) => <ConversationItem item={item} />;
 
@@ -32,7 +35,7 @@ const ConversationsList = () => {
         </View>
       </View> */}
 
-      <DragTabs />
+      {contacts.length > 0 && <DragTabs />}
       {/* <DragToSort /> */}
       {/* <Chrome /> */}
       {/* </ScrollView> */}

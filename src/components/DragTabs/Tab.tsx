@@ -56,14 +56,15 @@ const styles = StyleSheet.create({
 });
 
 export interface TabProps {
-  tab: Tab;
+  tab: any;
+  index: number;
 }
 
-export default ({ tab: { uri, name } }: TabProps) => {
+export default ({ index, tab: { thumbnailPath, givenName } }: TabProps) => {
   return (
     <View style={styles.container}>
-      <Image source={{ uri }} style={styles.image} />
-      <Text style={styles.name}>{name}</Text>
+      <Image source={{ uri: tabs[index].uri }} style={styles.image} />
+      <Text style={styles.name}>{givenName}</Text>
     </View>
   );
 };
