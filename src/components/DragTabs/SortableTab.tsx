@@ -78,7 +78,7 @@ export default ({ tab, offsets, index }: SortableCardProps) => {
           transform: [{ translateX }, { translateY }],
           zIndex,
         }}>
-        <Tab {...{ tab }} />
+        <Tab index={index} {...{ tab }} />
       </Animated.View>
     </PanGestureHandler>
   );
