@@ -16,9 +16,9 @@ const AnimatedTabBar: React.FC<MaterialTopTabBarProps> = (props) => {
     top: 60,
     bottom: 0,
     position: 'absolute',
-    width: 6,
-    height: 6,
-    backgroundColor: Colors.LAZURE,
+    width: 4,
+    height: 4,
+    backgroundColor: Colors.SOFT_BLACK,
     borderRadius: 50,
     transform: position.getTranslateTransform(),
   };
@@ -62,7 +62,7 @@ const AnimatedTabBar: React.FC<MaterialTopTabBarProps> = (props) => {
     }
     Animated.timing(position, {
       toValue: { x: valueX, y: 0 },
-      duration: 450,
+      duration: 300,
       easing: Easing.out(Easing.ease),
       useNativeDriver: true,
     }).start();
