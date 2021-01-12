@@ -3,26 +3,31 @@ import { Colors } from '@app/theme';
 
 export default StyleSheet.create({
   container: {
-    height: 68,
+    height: 80,
     backgroundColor: Colors.WHITE,
-    paddingVertical: 16,
+    paddingVertical: 18,
     paddingHorizontal: 20,
     flexDirection: 'row',
-    borderBottomColor: Colors.STROKE,
-    borderBottomWidth: 1,
+    position: 'relative',
   },
   textWrap: { justifyContent: 'space-between' },
   name: {
-    color: Colors.STRONG_BLACK,
+    color: Colors.SOFT_BLACK,
   },
   avatar: {
-    width: 36,
-    height: 36,
-    borderRadius: 50,
-    backgroundColor: 'black',
+    width: 44,
+    height: 44,
+    borderRadius: 20,
+    backgroundColor: '#C4C4C4',
     marginRight: 16,
   },
   text: {
-    color: Colors.SYSTEM_GREY,
+    color: Colors.SOFT_BLACK,
+    opacity: 0.6,
+  },
+  add: {
+    position: 'absolute',
+    bottom: 20,
+    right: 30,
   },
 });

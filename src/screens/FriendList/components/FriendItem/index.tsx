@@ -1,5 +1,6 @@
 import React from 'react';
 import { Text } from '@app/theme';
+import ButtonSmall from '@app/components/ButtonSmall';
 import { View, TouchableOpacity } from 'react-native';
 
 import styles from './styles';
@@ -13,13 +14,18 @@ const FriendItem: React.FC<FriendItemProps> = ({ item }) => {
   return (
     <TouchableOpacity style={styles.container}>
       <View style={styles.avatar} />
+
       <View style={styles.textWrap}>
-        <Text fontSize="medium" style={styles.name}>
+        <Text fontSize="big" style={styles.name}>
           {item.givenName} {item.familyName}
         </Text>
-        <Text fontSize="small" style={styles.text}>
+        <Text fontSize="medium" style={styles.text}>
           {item.phoneNumbers && getNumberFromContact(item.phoneNumbers)}
         </Text>
+      </View>
+
+      <View style={styles.add}>
+        <ButtonSmall text={'Пригласить'} />
       </View>
     </TouchableOpacity>
   );

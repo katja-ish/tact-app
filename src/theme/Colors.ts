@@ -1,7 +1,8 @@
 export enum Colors {
-  SOFT_BLACK = '#222222',
+  SOFT_BLACK = '#323232',
   STRONG_BLACK = '#111111',
-  WHITE = '#FEFEFE',
+  WHITE = '#ffffff',
+  SOFT_WHITE = '#fefefe',
   SYSTEM_GREY = 'rgba(50, 50, 50, 0.5)',
   STROKE = 'rgba(96, 109, 164, 0.25)',
   LIGHT_PURPLE = '#F3F1F8',
