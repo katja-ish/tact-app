@@ -2,26 +2,30 @@ import React from 'react';
 import { Text, Colors } from '@app/theme';
 import { View, SafeAreaView, StyleSheet, Button } from 'react-native';
 import ButtonLight from '@app/components/ButtonLight';
+import ButtonSquare from '@app/components/ButtonSquare';
 
 function SettingsDetails({ navigation }: any) {
   return (
     <SafeAreaView style={styles.container}>
+      <ButtonSquare icon="⚙️" onPress={() => navigation.navigate('Account')} style={styles.nav} />
+      {/* Навигация не работает на кастомных кнопках */}
+      <Button onPress={() => navigation.navigate('Account')} title={'Аккаунт'} />
+      {/* Навигация по rn кнопке */}
+
       <View style={styles.flex}>
         <View style={styles.avatar}></View>
-        <Text style={styles.username}>@username</Text>
-        <Button
-          title="Изменить аккаунт"
-          color={Colors.LAZURE}
-          onPress={() => navigation.navigate('Account')}
-        />
+        <Text style={styles.username}>Катя Никитина</Text>
       </View>
-      <View style={styles.statistics}>
-        <Text style={styles.statisticsText}>Статистика</Text>
+      <View style={styles.shareContainer}>
+        <Text fontSize={'big'} style={styles.shareLink}>
+          tact.app/semilunar
+        </Text>
+        <Text style={styles.shareText}>Поделитесь быстрой ссылкой с друзьями, чтобы общаться</Text>
       </View>
       <View style={styles.buttons}>
-        <ButtonLight text={'Уведомления'} />
-        <ButtonLight text={'Оформление'} />
-        <ButtonLight text={'Выйти'} />
+        <ButtonLight text={'Уведомления'} height={50} />
+        <ButtonLight text={'Как работает приложение'} height={50} />
+        <ButtonLight text={'Выйти'} value={''} height={50} />
       </View>
     </SafeAreaView>
   );
@@ -29,49 +33,62 @@ function SettingsDetails({ navigation }: any) {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: 'white',
+    backgroundColor: Colors.WHITE,
     paddingHorizontal: 20,
-    paddingVertical: 30,
-    flex: 1,
-    justifyContent: 'space-between',
+    // paddingVertical: 30,
+    // position: 'relative',
+    height: '100%',
   },
   flex: {
     flexDirection: 'column',
     alignItems: 'center',
   },
+  nav: {
+    position: 'absolute',
+    alignSelf: 'flex-end',
+    top: 0,
+    right: 0,
+  },
   username: {
-    fontSize: 20,
+    fontSize: 22,
     lineHeight: 22,
-    color: Colors.LAZURE,
+    fontWeight: '600',
+    color: Colors.SOFT_BLACK,
+    marginBottom: 20,
   },
   avatar: {
     width: 80,
     height: 80,
-    backgroundColor: Colors.SOFT_BLACK,
-    borderRadius: 24,
-    marginBottom: 20,
+    backgroundColor: '#c4c4c4',
+    borderRadius: 25,
+    marginBottom: 16,
+    marginTop: 65,
   },
   label: {
     marginBottom: 10,
   },
-  statistics: {
+  shareContainer: {
     flexDirection: 'column',
     alignItems: 'center',
-    backgroundColor: Colors.LIGHT_LAZURE,
-    height: 100,
+    backgroundColor: '#F6F6F6',
+    height: 110,
     borderRadius: 10,
+    paddingHorizontal: 36,
+    paddingVertical: 20,
+    marginBottom: 42,
   },
-  statisticsText: {
-    fontSize: 18,
-    lineHeight: 100,
+  shareLink: {
+    color: Colors.SOFT_BLACK,
+    opacity: 0.6,
+    marginBottom: 12,
+  },
+  shareText: {
     textAlign: 'center',
-    color: Colors.LAZURE,
+    color: Colors.SOFT_BLACK,
+    opacity: 0.35,
   },
   buttons: {
-    justifyContent: 'center',
-    alignItems: 'center',
     flexDirection: 'column',
-    marginBottom: 30,
   },
 });
 

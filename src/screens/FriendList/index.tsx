@@ -20,9 +20,10 @@ const FriendList = () => {
 
   return (
     <SafeAreaView style={styles.container}>
-      <Text fontSize="large" style={styles.title}>
-        Мои контакты
+      <Text fontSize="h1" style={styles.title}>
+        Телефонная книга
       </Text>
+
       <FlatList
         data={contacts}
         keyExtractor={(item) => `contact${item.recordID}`}
@@ -35,15 +36,17 @@ const FriendList = () => {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: 'white',
+    backgroundColor: '#F6F6F6',
   },
   list: {
-    // borderRadius: 10,
+    backgroundColor: 'black',
+    // height: '100%',
   },
   title: {
     color: Colors.STRONG_BLACK,
-    paddingHorizontal: 20,
-    paddingVertical: 10,
+    alignSelf: 'center',
+    marginTop: 32,
+    marginBottom: 70,
   },
 });
 

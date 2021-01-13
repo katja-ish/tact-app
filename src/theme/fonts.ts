@@ -22,9 +22,17 @@ export const FontSize = StyleSheet.create({
     fontSize: 15,
     lineHeight: 18,
   } as TextStyle,
+  buttonText: {
+    fontSize: 16,
+    lineHeight: 22,
+  } as TextStyle,
   big: {
     fontSize: 18,
     lineHeight: 20,
+  } as TextStyle,
+  h1: {
+    fontSize: 22,
+    lineHeight: 25,
   } as TextStyle,
   large: {
     fontSize: 34,

@@ -3,6 +3,7 @@ import { Text, Colors } from '@app/theme';
 import { View, SafeAreaView, StyleSheet, TextInput, Alert } from 'react-native';
 import Button from '@app/components/Button';
 import AvatarShape from '@app/components/AvatarShape';
+import ButtonLight from '@app/components/ButtonLight';
 
 const Account = () => {
   const [value, onChangeText] = React.useState('Katja Nikitina');
@@ -10,25 +11,26 @@ const Account = () => {
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.flex}>
-        <Text fontSize="medium" style={styles.label}>
-          Аватар
-        </Text>
-        <View style={styles.avatarContainer}>
+        {/* <View style={styles.avatar}></View> */}
+
+        <ButtonLight text={'Аватар'} value={'●'} />
+        {/* <View style={styles.avatarContainer}>
           <AvatarShape shape={'circle'} />
           <AvatarShape shape={'square'} />
           <AvatarShape shape={'rhombus'} />
-        </View>
-        {/* <View style={styles.avatar}></View> */}
-        <Text fontSize="medium" style={styles.label}>
-          Имя
-        </Text>
-        <TextInput
+        </View> */}
+        <ButtonLight height={80} text={'Имя'} value={'Катя'} />
+        <ButtonLight height={80} text={'Никнейм'} value={'semilunar'} />
+        <ButtonLight height={80} text={'Дата рождения'} value={'28.04.1999'} />
+        <ButtonLight height={80} text={'Друзья'} value={'➤'} />
+
+        {/*  <TextInput
           style={styles.textInput}
           onChangeText={(text) => onChangeText(text)}
           value={value}
           maxLength={33}
         />
-        <Button text={'Сохранить'} />
+        <Button text={'Сохранить'} /> */}
       </View>
     </SafeAreaView>
   );
@@ -44,17 +46,18 @@ const styles = StyleSheet.create({
   flex: {
     flexDirection: 'column',
   },
+  row: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+  },
   label: {
     marginBottom: 10,
     color: Colors.SOFT_BLACK,
   },
   textInput: {
     height: 50,
-    // borderColor: 'gray',
-    // borderWidth: 1,
     backgroundColor: Colors.LIGHT_LAZURE,
     fontSize: 16,
-    borderRadius: 8,
     paddingHorizontal: 15,
     marginBottom: 20,
   },
@@ -63,18 +66,10 @@ const styles = StyleSheet.create({
     marginBottom: 20,
   },
   avatar: {
-    width: 80,
-    height: 80,
-    backgroundColor: 'white',
-    borderRadius: 50,
-    borderColor: '#000',
-    borderStyle: 'dashed',
-    borderWidth: 1,
-    marginBottom: 20,
-  },
-  button: {
-    backgroundColor: Colors.LAZURE,
-    color: Colors.WHITE,
+    width: 40,
+    height: 40,
+    backgroundColor: '#c4c4c4',
+    borderRadius: 18,
   },
 });
 

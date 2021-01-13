@@ -3,7 +3,7 @@ import { StyleSheet, Text as TextBase, TextProps } from 'react-native';
 import { Fonts, FontSize, FontStyle } from '@app/theme/fonts';
 
 interface IProps extends TextProps {
-  fontSize?: 'ultraSmall' | 'small' | 'medium' | 'big' | 'large';
+  fontSize?: 'ultraSmall' | 'small' | 'medium' | 'buttonText' | 'big' | 'h1' | 'large';
 }
 
 const Text: React.FC<IProps> = ({ style, fontSize = 'medium', ...rest }) => {
