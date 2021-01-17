@@ -10,7 +10,7 @@ const Settings = () => {
       <Stack.Screen
         name="SettingsDetails"
         component={SettingsDetails}
-        options={{ title: 'Настройки (убрать)' }}
+        options={{ title: 'Настройки' }}
       />
       <Stack.Screen name="Account" component={Account} options={{ title: 'Аккаунт' }} />
     </Stack.Navigator>

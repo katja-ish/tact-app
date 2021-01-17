@@ -6,11 +6,12 @@ import ButtonSquare from '@app/components/ButtonSquare';
 
 function SettingsDetails({ navigation }: any) {
   return (
-    <SafeAreaView style={styles.container}>
-      <ButtonSquare icon="⚙️" onPress={() => navigation.navigate('Account')} style={styles.nav} />
-      {/* Навигация не работает на кастомных кнопках */}
+    <View style={styles.container}>
       <Button onPress={() => navigation.navigate('Account')} title={'Аккаунт'} />
       {/* Навигация по rn кнопке */}
+
+      <ButtonSquare icon="⚙️" onPress={() => navigation.navigate('Account')} style={styles.nav} />
+      {/* Навигация не работает на кастомных кнопках */}
 
       <View style={styles.flex}>
         <View style={styles.avatar}></View>
@@ -27,7 +28,7 @@ function SettingsDetails({ navigation }: any) {
         <ButtonLight text={'Как работает приложение'} height={50} />
         <ButtonLight text={'Выйти'} value={''} height={50} />
       </View>
-    </SafeAreaView>
+    </View>
   );
 }
 
@@ -44,10 +45,10 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   nav: {
-    position: 'absolute',
-    alignSelf: 'flex-end',
-    top: 0,
-    right: 0,
+    // position: 'absolute',
+    // alignSelf: 'flex-end',
+    // top: 10,
+    // right: 10,
   },
   username: {
     fontSize: 22,
@@ -62,7 +63,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#c4c4c4',
     borderRadius: 25,
     marginBottom: 16,
-    marginTop: 65,
+    marginTop: 25,
   },
   label: {
     marginBottom: 10,

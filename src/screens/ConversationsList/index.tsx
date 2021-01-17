@@ -6,6 +6,7 @@ import Contacts from 'react-native-contacts';
 import DragTabs from '@app/components/DragTabs';
 import { useDispatch, useSelector } from '@app/hooks';
 import { setContacts } from '@app/store/contacts/actions';
+import ButtonSquare from '@app/components/ButtonSquare';
 
 const ConversationsList = () => {
   const contacts = useSelector((state) => state.contacts.list);
@@ -34,6 +35,9 @@ const ConversationsList = () => {
           </Text>
         </View>
       </View> */}
+
+      {/* <ButtonSquare icon="🚼" />
+      <ButtonSquare icon="🧩" /> */}
 
       {contacts.length > 0 && <DragTabs />}
       {/* <DragToSort /> */}

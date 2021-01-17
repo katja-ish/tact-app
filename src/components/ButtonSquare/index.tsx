@@ -18,7 +18,10 @@ const styles = StyleSheet.create({
     backgroundColor: Colors.WHITE,
     justifyContent: 'center',
     alignItems: 'center',
-    borderWidth: 1,
+    shadowOffset: { width: 0, height: 3 },
+    shadowColor: 'black',
+    shadowOpacity: 0.1,
+    shadowRadius: 3.84,
     // box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.08);
   },
 });

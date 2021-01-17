@@ -14,6 +14,7 @@
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* TactAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* TactAppTests.m */; };
+		4667497F25B230FC00973A37 /* main.jsbundle in Sources */ = {isa = PBXBuildFile; fileRef = 008F07F21AC5B25A0029DE68 /* main.jsbundle */; };
 		8F4DFE117460322E9533A071 /* libPods-TactApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E40611F36FA171589D4850DB /* libPods-TactApp.a */; };
 		90A64C7AEAB1CB6AC88BF300 /* libPods-TactApp-TactAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C30D9D1F8B41309EC3708B1 /* libPods-TactApp-TactAppTests.a */; };
 		BB334E3EF4D11DC52B937B3A /* libPods-TactApp-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 88F3D5E7D77F053F8A068687 /* libPods-TactApp-tvOSTests.a */; };
@@ -372,7 +373,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
+			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
 		};
 		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -629,6 +630,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4667497F25B230FC00973A37 /* main.jsbundle in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
