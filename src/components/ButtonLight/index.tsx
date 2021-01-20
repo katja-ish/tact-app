@@ -1,10 +1,11 @@
 import React from 'react';
 import { View, StyleSheet } from 'react-native';
 import { Text, Colors } from '@app/theme';
+import { TouchableOpacity } from 'react-native-gesture-handler';
 
 const ButtonLight = ({ text, height, value }: any) => {
   return (
-    <View style={styles.container} height={height}>
+    <TouchableOpacity style={styles.container} height={height}>
       <View style={styles.textContainer}>
         <Text fontSize="buttonText" style={styles.text}>
           {text}
@@ -13,7 +14,7 @@ const ButtonLight = ({ text, height, value }: any) => {
           {value}
         </Text>
       </View>
-    </View>
+    </TouchableOpacity>
   );
 };
 

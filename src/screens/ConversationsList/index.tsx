@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Text, Colors } from '@app/theme';
-import { SafeAreaView, View, StyleSheet, FlatList } from 'react-native';
+import { SafeAreaView, View, StyleSheet, FlatList, TouchableHighlight, Switch } from 'react-native';
 import ConversationItem from './components/ConversationItem';
 import Contacts from 'react-native-contacts';
 import DragTabs from '@app/components/DragTabs';
@@ -20,7 +20,10 @@ const ConversationsList = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  // const renderConversation = ({ item }) => <ConversationItem item={item} />;
+  const [isEnabled, setIsEnabled] = useState(false);
+  const toggleSwitch = () => setIsEnabled((previousState) => !previousState);
+
+  // const renderConversation = ({ item }: any) => <ConversationItem item={item} />;
 
   return (
     <SafeAreaView style={styles.container}>
@@ -38,6 +41,24 @@ const ConversationsList = () => {
 
       {/* <ButtonSquare icon="🚼" />
       <ButtonSquare icon="🧩" /> */}
+
+      <Switch
+        trackColor={{ false: '#767577', true: '#81b0ff' }}
+        thumbColor={isEnabled ? '#f5dd4b' : '#f4f3f4'}
+        ios_backgroundColor="#3e3e3e"
+        onValueChange={toggleSwitch}
+        value={isEnabled}
+      />
+
+      <TouchableHighlight
+        onPress={() => {
+          alert('Switch to rows!');
+        }}
+        underlayColor="white">
+        <View style={styles.button}>
+          <Text style={styles.buttonText}>≣</Text>
+        </View>
+      </TouchableHighlight>
 
       {contacts.length > 0 && <DragTabs />}
       {/* <DragToSort /> */}

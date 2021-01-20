@@ -3,10 +3,17 @@ import { Text, Colors } from '@app/theme';
 import { View, SafeAreaView, StyleSheet, Button } from 'react-native';
 import ButtonLight from '@app/components/ButtonLight';
 import ButtonSquare from '@app/components/ButtonSquare';
+// import { FaceIcon } from '@modulz/radix-icons';
+// import { SunIcon } from '@radix-ui/react-icons';
 
 function SettingsDetails({ navigation }: any) {
   return (
     <View style={styles.container}>
+      {/* <FaceIcon /> */}
+      {/* <div>
+        <SunIcon />
+      </div> */}
+
       <Button onPress={() => navigation.navigate('Account')} title={'Аккаунт'} />
       {/* Навигация по rn кнопке */}
 
@@ -15,7 +22,7 @@ function SettingsDetails({ navigation }: any) {
 
       <View style={styles.flex}>
         <View style={styles.avatar}></View>
-        <Text style={styles.username}>Катя Никитина</Text>
+        <Text style={styles.username}>Имя Фамилия</Text>
       </View>
       <View style={styles.shareContainer}>
         <Text fontSize={'big'} style={styles.shareLink}>

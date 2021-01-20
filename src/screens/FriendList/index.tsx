@@ -23,6 +23,9 @@ const FriendList = () => {
       <Text fontSize="h1" style={styles.title}>
         Телефонная книга
       </Text>
+      <Text fontSize="medium" style={styles.desc}>
+        Мы нашли твоих друзей, которые уже в Tact. Начни общаться или пригласи остальных!
+      </Text>
 
       <FlatList
         data={contacts}
@@ -39,14 +42,21 @@ const styles = StyleSheet.create({
     backgroundColor: '#F6F6F6',
   },
   list: {
-    backgroundColor: 'black',
+    // backgroundColor: 'black',
     // height: '100%',
   },
   title: {
     color: Colors.STRONG_BLACK,
     alignSelf: 'center',
     marginTop: 32,
-    marginBottom: 70,
+  },
+  desc: {
+    color: Colors.STRONG_BLACK,
+    alignSelf: 'center',
+    textAlign: 'center',
+    marginTop: 16,
+    marginBottom: 32,
+    opacity: 0.6,
   },
 });
 
