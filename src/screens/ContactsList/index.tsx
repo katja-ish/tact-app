@@ -3,10 +3,10 @@ import { View, SafeAreaView, StyleSheet, FlatList } from 'react-native';
 import { Text, Colors } from '@app/theme';
 
 import Contacts from 'react-native-contacts';
-import FriendItem from './components/FriendItem';
+import FriendItem from './components/ContactItem';
 // import { Colors } from 'react-native/Libraries/NewAppScreen';
 
-const FriendList = () => {
+const ContactsList = () => {
   const [contacts, setContacts] = useState([]);
   useEffect(() => {
     Contacts.getAll().then((data) => {
@@ -60,4 +60,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default FriendList;
+export default ContactsList;

@@ -4,6 +4,7 @@ import { View, TouchableOpacity } from 'react-native';
 import { StyleSheet } from 'react-native';
 import { Colors } from '@app/theme';
 import { useNavigation } from '@react-navigation/native';
+import Avatar from '@app/components/_atoms/Avatar';
 
 interface ConversationItemProps {
   item: any;
@@ -19,14 +20,14 @@ const ConversationItem: React.FC<ConversationItemProps> = ({ item }) => {
       onPress={() => {
         navigation.navigate('Conversation');
       }}>
-      <View style={styles.avatar} />
+      <View style={styles.avatarContainer}>
+        <Avatar />
+      </View>
       <View style={styles.textWrap}>
-        <Text fontSize="medium" style={styles.name}>
+        <Text style={styles.name}>
           {item.givenName} {item.familyName}
         </Text>
-        <Text fontSize="small" style={styles.text}>
-          last message
-        </Text>
+        <Text style={styles.text}>Радость</Text>
       </View>
     </TouchableOpacity>
   );
@@ -34,27 +35,25 @@ const ConversationItem: React.FC<ConversationItemProps> = ({ item }) => {
 
 const styles = StyleSheet.create({
   container: {
-    height: 68,
+    height: 80,
     backgroundColor: Colors.WHITE,
-    paddingVertical: 16,
+    paddingVertical: 17,
     paddingHorizontal: 20,
     flexDirection: 'row',
-    borderBottomColor: Colors.STROKE,
-    borderBottomWidth: 1,
+  },
+  avatarContainer: {
+    marginRight: 14,
   },
   textWrap: { justifyContent: 'space-between' },
   name: {
-    color: Colors.STRONG_BLACK,
-  },
-  avatar: {
-    width: 36,
-    height: 36,
-    borderRadius: 50,
-    backgroundColor: 'black',
-    marginRight: 16,
+    color: Colors.SOFT_BLACK,
+    fontSize: 18,
+    lineHeight: 21,
+    letterSpacing: 0.02,
   },
   text: {
-    color: Colors.SYSTEM_GREY,
+    color: Colors.SOFT_BLACK,
+    opacity: 0.6,
   },
 });
 

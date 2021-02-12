@@ -1,9 +1,9 @@
 import React from 'react';
 import { Text, Colors } from '@app/theme';
 import { View, SafeAreaView, StyleSheet, TextInput, Alert } from 'react-native';
-import Button from '@app/components/Button';
-import AvatarShape from '@app/components/AvatarShape';
-import ButtonLight from '@app/components/ButtonLight';
+import Button from '@app/components/_atoms/Button';
+import AvatarShape from '@app/components/_atoms/AvatarShape';
+import ButtonLight from '@app/components/_atoms/ButtonLight';
 
 const Account = () => {
   const [value, onChangeText] = React.useState('Katja Nikitina');

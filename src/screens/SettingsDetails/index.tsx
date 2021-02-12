@@ -1,8 +1,8 @@
 import React from 'react';
 import { Text, Colors } from '@app/theme';
 import { View, SafeAreaView, StyleSheet, Button } from 'react-native';
-import ButtonLight from '@app/components/ButtonLight';
-import ButtonSquare from '@app/components/ButtonSquare';
+import ButtonLight from '@app/components/_atoms/ButtonLight';
+import ButtonSquare from '@app/components/_atoms/ButtonSquare';
 // import { FaceIcon } from '@modulz/radix-icons';
 // import { SunIcon } from '@radix-ui/react-icons';
 

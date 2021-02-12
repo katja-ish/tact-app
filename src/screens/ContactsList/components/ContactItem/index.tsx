@@ -1,6 +1,6 @@
 import React from 'react';
 import { Text } from '@app/theme';
-import ButtonSmall from '@app/components/ButtonSmall';
+import ButtonSmall from '@app/components/_atoms/ButtonSmall';
 import { View, TouchableOpacity } from 'react-native';
 
 import styles from './styles';

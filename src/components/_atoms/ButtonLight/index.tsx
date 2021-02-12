@@ -5,7 +5,7 @@ import { TouchableOpacity } from 'react-native-gesture-handler';
 
 const ButtonLight = ({ text, height, value }: any) => {
   return (
-    <TouchableOpacity style={styles.container} height={height}>
+    <TouchableOpacity style={styles.container}>
       <View style={styles.textContainer}>
         <Text fontSize="buttonText" style={styles.text}>
           {text}

@@ -2,12 +2,11 @@ import { Text } from '@app/theme';
 import React from 'react';
 import { SafeAreaView, View, StyleSheet } from 'react-native';
 
-const Conversation = () => {
+const Conversation = ({ navigation }: any) => {
   return (
     <SafeAreaView style={styles.container}>
       <View>
-        <Text fontSize={'h1'}>Conversation</Text>
-        <Text fontSize={'small'}>Имя Собеседника will go here</Text>
+        <Text fontSize={'h1'}>Друг {navigation.getParam('givenName')}</Text>
       </View>
     </SafeAreaView>
   );

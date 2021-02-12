@@ -3,10 +3,7 @@ import { ScreenNames } from '@app/types';
 export default (name: string) => {
   let iconName = '';
   switch (name) {
-    case ScreenNames.FRIEND_LIST:
-      iconName = 'users';
-      break;
-    case ScreenNames.FRIEND_LIST:
+    case ScreenNames.CONTACTS_LIST:
       iconName = 'users';
       break;
     case ScreenNames.CONVERSATIONS_LIST:

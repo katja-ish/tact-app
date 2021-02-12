@@ -47,7 +47,7 @@ const AnimatedTabBar: React.FC<MaterialTopTabBarProps> = (props) => {
   const animate = (routeName: string) => {
     let valueX;
     switch (routeName) {
-      case 'FriendListScreen':
+      case 'ContactsList':
         valueX = paddingHorizontal + iconWidth / 2 - 3;
         break;
       case 'ConversationsListScreen':

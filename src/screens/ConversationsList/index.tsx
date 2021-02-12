@@ -1,20 +1,22 @@
 import React, { useEffect, useState } from 'react';
-import { Text, Colors } from '@app/theme';
-import { SafeAreaView, View, StyleSheet, FlatList, TouchableHighlight, Switch } from 'react-native';
-import ConversationItem from './components/ConversationItem';
+import { Colors } from '@app/theme';
+import { SafeAreaView, View, StyleSheet, FlatList, Switch, Button } from 'react-native';
+import ConversationListItem from './components/ConversationListItem';
 import Contacts from 'react-native-contacts';
-import DragTabs from '@app/components/DragTabs';
+// import DragTabs from '@app/components/DragTabs';
 import { useDispatch, useSelector } from '@app/hooks';
 import { setContacts } from '@app/store/contacts/actions';
-import ButtonSquare from '@app/components/ButtonSquare';
+import { createStackNavigator } from '@react-navigation/stack';
+import HeaderMain from '@app/components/_molecules/HeaderMain';
+const Stack = createStackNavigator();
 
-const ConversationsList = () => {
+const ConversationsList = ({ navigation }: any) => {
   const contacts = useSelector((state) => state.contacts.list);
   const dispatch = useDispatch();
   useEffect(() => {
     Contacts.getAll().then((data) => {
       if (Array.isArray(data)) {
-        dispatch(setContacts(data.slice(0, 5)));
+        dispatch(setContacts(data));
       }
     });
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -23,31 +25,17 @@ const ConversationsList = () => {
   const [isEnabled, setIsEnabled] = useState(false);
   const toggleSwitch = () => setIsEnabled((previousState) => !previousState);
 
-  // const renderConversation = ({ item }: any) => <ConversationItem item={item} />;
+  const renderConversation = ({ item }: any) => <ConversationListItem item={item} />;
 
   return (
     <SafeAreaView style={styles.container}>
+      <HeaderMain />
+      <Button onPress={() => navigation.navigate('Settings')} title={'Настройки'} />
       {/* <ScrollView> */}
-      {/* <View style={styles.flex}>
-        <Text fontSize="large" style={styles.title}>
-          Список бесед
-        </Text>
-        <View style={styles.menu}>
-          <Text fontSize="medium" style={styles.menuText}>
-            About
-          </Text>
-        </View>
-      </View> */}
 
-      {/* <Switch
-        trackColor={{ false: '#767577', true: '#81b0ff' }}
-        thumbColor={isEnabled ? '#f5dd4b' : '#f4f3f4'}
-        ios_backgroundColor="#3e3e3e"
-        onValueChange={toggleSwitch}
-        value={isEnabled}
-      /> */}
+      {/* Свитчер для переключения с Flatlist на Tabs: */}
 
-      <TouchableHighlight
+      {/* <TouchableHighlight
         onPress={() => {
           alert('Switch to rows!');
         }}
@@ -55,19 +43,29 @@ const ConversationsList = () => {
         <View style={styles.button}>
           <Text style={styles.buttonText}>≣</Text>
         </View>
-      </TouchableHighlight>
+      </TouchableHighlight> 
+      
+      <Switch
+        trackColor={{ false: '#767577', true: '#81b0ff' }}
+        thumbColor={isEnabled ? '#f5dd4b' : '#f4f3f4'}
+        ios_backgroundColor="#3e3e3e"
+        onValueChange={toggleSwitch}
+        value={isEnabled}
+      /> */}
 
-      {contacts.length > 0 && <DragTabs />}
+      {/* Tabs: */}
+      {/*  {contacts.length > 0 && <DragTabs />} */}
+
       {/* <DragToSort /> */}
       {/* <Chrome /> */}
       {/* </ScrollView> */}
 
-      {/* <FlatList
+      <FlatList
         data={contacts}
         keyExtractor={(item) => `conversation${item.recordID}`}
         renderItem={renderConversation}
         style={styles.list}
-      /> */}
+      />
     </SafeAreaView>
   );
 };

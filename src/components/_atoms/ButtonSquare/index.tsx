@@ -3,7 +3,7 @@ import { View, StyleSheet } from 'react-native';
 import { Text, Colors } from '@app/theme';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 
-const ButtonSquare = ({ icon }: any, onPress) => {
+const ButtonSquare = ({ icon }: any, { onPress }: any) => {
   return (
     <TouchableOpacity style={styles.container} onPress={onPress}>
       <Text fontSize="big">{icon}</Text>
