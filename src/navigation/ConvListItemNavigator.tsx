@@ -14,7 +14,23 @@ export default () => {
       screenOptions={{
         headerShown: false,
       }}>
+      <Stack.Screen name={ScreenNames.CONVERSATIONS_LIST} component={ConversationsList} />
       <Stack.Screen name={ScreenNames.CONVERSATION} component={Conversation} />
     </Stack.Navigator>
   );
 };
+
+// const ConvListItemNavigator = createStackNavigator({
+//   ConversationsList: {
+//     screen: ConversationsList,
+//     navigationOptions: {
+//       title: 'Все друзья',
+//     },
+//   },
+//   Conversation: {
+//     screen: Conversation,
+//     navigationOptions: ({ navigation }: any) => ({
+//       title: navigation.getParam('name'),
+//     }),
+//   },
+// });

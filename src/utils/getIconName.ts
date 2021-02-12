@@ -9,7 +9,7 @@ export default (name: string) => {
     case ScreenNames.CONVERSATIONS_LIST:
       iconName = 'message-circle';
       break;
-    case ScreenNames.SETTINGS:
+    case ScreenNames.ACCOUNT:
       iconName = 'settings';
       break;
     default:

@@ -30,7 +30,9 @@ const ConversationsList = ({ navigation }: any) => {
   return (
     <SafeAreaView style={styles.container}>
       <HeaderMain />
+
       <Button onPress={() => navigation.navigate('Settings')} title={'Настройки'} />
+
       {/* <ScrollView> */}
 
       {/* Свитчер для переключения с Flatlist на Tabs: */}

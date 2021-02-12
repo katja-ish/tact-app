@@ -9,8 +9,8 @@ export default (name: string) => {
     case ScreenNames.CONVERSATIONS_LIST:
       label = 'Messages';
       break;
-    case ScreenNames.SETTINGS:
-      label = 'Settings';
+    case ScreenNames.ACCOUNT:
+      label = 'Account';
       break;
     default:
       break;

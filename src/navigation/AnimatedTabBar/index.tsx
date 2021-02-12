@@ -53,7 +53,7 @@ const AnimatedTabBar: React.FC<MaterialTopTabBarProps> = (props) => {
       case 'ConversationsListScreen':
         valueX = screenWidth / 2 - 3;
         break;
-      case 'SettingsScreen':
+      case 'AccountScreen':
         valueX = screenWidth - paddingHorizontal - 12 - 3;
         break;
       default:

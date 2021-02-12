@@ -6,7 +6,7 @@ import ButtonSquare from '@app/components/_atoms/ButtonSquare';
 // import { FaceIcon } from '@modulz/radix-icons';
 // import { SunIcon } from '@radix-ui/react-icons';
 
-function SettingsDetails({ navigation }: any) {
+function AccountDetails({ navigation }: any) {
   return (
     <View style={styles.container}>
       {/* <FaceIcon /> */}
@@ -14,10 +14,10 @@ function SettingsDetails({ navigation }: any) {
         <SunIcon />
       </div> */}
 
-      <Button onPress={() => navigation.navigate('Account')} title={'Аккаунт'} />
+      <Button onPress={() => navigation.navigate('Settings')} title={'Настройки'} />
       {/* Навигация по rn кнопке */}
 
-      <ButtonSquare icon="⚙️" onPress={() => navigation.navigate('Account')} style={styles.nav} />
+      <ButtonSquare icon="⚙️" onPress={() => navigation.navigate('Settings')} style={styles.nav} />
       {/* Навигация не работает на кастомных кнопках */}
 
       <View style={styles.flex}>
@@ -101,4 +101,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default SettingsDetails;
+export default AccountDetails;
