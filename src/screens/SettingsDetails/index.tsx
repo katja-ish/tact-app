@@ -32,6 +32,7 @@ function SettingsDetails({ navigation }: any) {
       </View>
       <View style={styles.buttons}>
         <ButtonLight text={'Уведомления'} height={50} />
+        <ButtonLight text={'Мой словарь'} height={50} />
         <ButtonLight text={'Как работает приложение'} height={50} />
         <ButtonLight text={'Выйти'} value={''} height={50} />
       </View>
@@ -81,7 +82,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#F6F6F6',
     height: 110,
     borderRadius: 10,
-    paddingHorizontal: 36,
+    paddingHorizontal: 30,
     paddingVertical: 20,
     marginBottom: 42,
   },

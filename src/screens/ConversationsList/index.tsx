@@ -39,16 +39,13 @@ const ConversationsList = () => {
         </View>
       </View> */}
 
-      {/* <ButtonSquare icon="🚼" />
-      <ButtonSquare icon="🧩" /> */}
-
-      <Switch
+      {/* <Switch
         trackColor={{ false: '#767577', true: '#81b0ff' }}
         thumbColor={isEnabled ? '#f5dd4b' : '#f4f3f4'}
         ios_backgroundColor="#3e3e3e"
         onValueChange={toggleSwitch}
         value={isEnabled}
-      />
+      /> */}
 
       <TouchableHighlight
         onPress={() => {
@@ -104,6 +101,19 @@ const styles = StyleSheet.create({
     color: Colors.BLUE_WINTHER,
   },
   list: {},
+  button: {
+    height: 44,
+    width: 44,
+    borderColor: 'black',
+    borderWidth: 1,
+    borderRadius: 10,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  buttonText: {
+    fontSize: 36,
+    lineHeight: 44,
+  },
 });
 
 export default ConversationsList;
