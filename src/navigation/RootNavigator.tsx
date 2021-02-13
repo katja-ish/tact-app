@@ -1,5 +1,13 @@
 import React from 'react';
-import { ContactsList, ConversationsList, Account } from '@app/screens';
+import {
+  ContactsList,
+  ConversationsList,
+  Account,
+  AccountDetails,
+  Settings,
+  Dictionary,
+  Notifications,
+} from '@app/screens';
 import { ScreenNames, RootStackParamList } from '@app/types';
 import { enableScreens } from 'react-native-screens';
 import { createStackNavigator } from '@react-navigation/stack';
@@ -18,7 +26,10 @@ export default () => {
     //     headerShown: false,
     //   }}>
     //   <Stack.Screen name={ScreenNames.CONVERSATIONS_LIST} component={ConversationsList} />
+    //   <Stack.Screen name={ScreenNames.ACCOUNT} component={Account} />
     //   <Stack.Screen name={ScreenNames.SETTINGS} component={Settings} />
+    //   <Stack.Screen name={ScreenNames.NOTIFICATIONS} component={Notifications} />
+    //   <Stack.Screen name={ScreenNames.DICTIONARY} component={Dictionary} />
     // </Stack.Navigator>
 
     <Tab.Navigator

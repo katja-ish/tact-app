@@ -3,7 +3,7 @@ import { Colors } from '@app/theme';
 import { SafeAreaView, View, StyleSheet, FlatList, Switch, Button } from 'react-native';
 import ConversationListItem from './components/ConversationListItem';
 import Contacts from 'react-native-contacts';
-// import DragTabs from '@app/components/DragTabs';
+// import DragTabs from '@app/components/_organisms/DragTabs';
 import { useDispatch, useSelector } from '@app/hooks';
 import { setContacts } from '@app/store/contacts/actions';
 import { createStackNavigator } from '@react-navigation/stack';
@@ -31,7 +31,7 @@ const ConversationsList = ({ navigation }: any) => {
     <SafeAreaView style={styles.container}>
       <HeaderMain />
 
-      <Button onPress={() => navigation.navigate('Account')} title={'аккаунт'} />
+      <Button onPress={() => navigation.navigate('AccountDetails')} title={'аккаунт'} />
       <Button onPress={() => navigation.navigate('Settings')} title={'настройки'} />
 
       {/* <ScrollView> */}

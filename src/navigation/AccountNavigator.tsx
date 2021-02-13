@@ -1,10 +1,10 @@
 import React from 'react';
-import { Settings, AccountDetails, Notifications, Dictionary } from '@app/screens';
+import { AccountDetails, Settings, Notifications, Dictionary } from '@app/screens';
 import { createStackNavigator } from '@react-navigation/stack';
 
 const Stack = createStackNavigator();
 
-const Account = () => {
+const AccountNavigator = () => {
   return (
     <Stack.Navigator initialRouteName="AccountDetails">
       <Stack.Screen
@@ -23,4 +23,4 @@ const Account = () => {
   );
 };
 
-export default Account;
+export default AccountNavigator;

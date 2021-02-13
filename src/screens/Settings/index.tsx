@@ -1,9 +1,9 @@
 import React from 'react';
 import { Text, Colors } from '@app/theme';
 import { View, SafeAreaView, StyleSheet, TextInput, Alert } from 'react-native';
-import Button from '@app/components/_atoms/Button';
+import PrimaryButton from '@app/components/_atoms/PrimaryButton';
 import AvatarShape from '@app/components/_atoms/AvatarShape';
-import ButtonLight from '@app/components/_atoms/ButtonLight';
+import ControlShevron from '@app/components/_atoms/ControlShevron';
 
 const Settings = () => {
   const [value, onChangeText] = React.useState('Katja Nikitina');
@@ -11,18 +11,16 @@ const Settings = () => {
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.flex}>
-        {/* <View style={styles.avatar}></View> */}
-
-        <ButtonLight text={'Аватар'} value={'●'} />
+        <ControlShevron text={'Аватар'} rightAsset={'●'} />
         {/* <View style={styles.avatarContainer}>
           <AvatarShape shape={'circle'} />
           <AvatarShape shape={'square'} />
           <AvatarShape shape={'rhombus'} />
         </View> */}
-        <ButtonLight height={80} text={'Имя'} value={'Катя'} />
-        <ButtonLight height={80} text={'Никнейм'} value={'semilunar'} />
-        <ButtonLight height={80} text={'Дата рождения'} value={'28.04.1999'} />
-        <ButtonLight height={80} text={'Друзья'} value={'➤'} />
+        <ControlShevron height={80} text={'Имя'} rightAsset={'Катя'} />
+        <ControlShevron height={80} text={'Никнейм'} rightAsset={'semilunar'} />
+        <ControlShevron height={80} text={'Дата рождения'} rightAsset={'28.04.1999'} />
+        <ControlShevron height={80} text={'Друзья'} rightAsset={'➤'} />
 
         {/*  <TextInput
           style={styles.textInput}

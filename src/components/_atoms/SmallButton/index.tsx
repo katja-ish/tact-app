@@ -2,7 +2,7 @@ import React from 'react';
 import { StyleSheet } from 'react-native';
 import { Text, Colors } from '@app/theme';
 
-const ButtonSmall = ({ text }: any) => {
+const SmallButton = ({ text }: any) => {
   return (
     <Text fontSize="small" style={styles.text}>
       {text}
@@ -17,4 +17,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default ButtonSmall;
+export default SmallButton;

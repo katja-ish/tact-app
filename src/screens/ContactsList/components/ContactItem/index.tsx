@@ -1,6 +1,6 @@
 import React from 'react';
 import { Text } from '@app/theme';
-import ButtonSmall from '@app/components/_atoms/ButtonSmall';
+import SmallButton from '@app/components/_atoms/SmallButton';
 import { View, TouchableOpacity } from 'react-native';
 
 import styles from './styles';
@@ -25,7 +25,7 @@ const FriendItem: React.FC<FriendItemProps> = ({ item }) => {
       </View>
 
       <View style={styles.add}>
-        <ButtonSmall text={'Пригласить'} />
+        <SmallButton text={'Пригласить'} />
       </View>
     </TouchableOpacity>
   );

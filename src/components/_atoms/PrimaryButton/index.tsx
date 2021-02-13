@@ -2,7 +2,7 @@ import React from 'react';
 import { View, StyleSheet } from 'react-native';
 import { Text, Colors } from '@app/theme';
 
-const Button = ({ text }: any) => {
+const PrimaryButton = ({ text }: any) => {
   return (
     <View style={styles.container}>
       <Text fontSize="big" style={styles.text}>
@@ -27,4 +27,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Button;
+export default PrimaryButton;

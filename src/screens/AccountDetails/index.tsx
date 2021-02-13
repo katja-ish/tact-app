@@ -1,9 +1,9 @@
 import React from 'react';
 import { Text, Colors } from '@app/theme';
 import { View, SafeAreaView, StyleSheet, Button } from 'react-native';
-import ButtonLight from '@app/components/_atoms/ButtonLight';
-import ButtonSquare from '@app/components/_atoms/ButtonSquare';
-
+import ControlShevron from '@app/components/_atoms/ControlShevron';
+import SquareButton from '@app/components/_atoms/SquareButton';
+// тема с radix-icons не работает
 // import { FaceIcon } from '@modulz/radix-icons';
 
 function AccountDetails({ navigation }: any) {
@@ -11,11 +11,7 @@ function AccountDetails({ navigation }: any) {
     <View style={styles.container}>
       {/* <FaceIcon /> */}
 
-      <Button onPress={() => navigation.navigate('Settings')} title={'Настройки'} />
-      {/* Навигация по rn кнопке */}
-
-      <ButtonSquare icon="⚙️" onPress={() => navigation.navigate('Settings')} style={styles.nav} />
-      {/* Навигация не работает на кастомных кнопках */}
+      <SquareButton icon="⚙️" onPress={() => navigation.navigate('Settings')} style={styles.nav} />
 
       <View style={styles.flex}>
         <View style={styles.avatar}></View>
@@ -28,10 +24,18 @@ function AccountDetails({ navigation }: any) {
         <Text style={styles.shareText}>Поделитесь быстрой ссылкой с друзьями, чтобы общаться</Text>
       </View>
       <View style={styles.buttons}>
-        <ButtonLight text={'Уведомления'} height={50} />
-        <ButtonLight text={'Мой словарь'} height={50} />
-        <ButtonLight text={'Как работает приложение'} height={50} />
-        <ButtonLight text={'Выйти'} value={''} height={50} />
+        <ControlShevron
+          text={'Уведомления'}
+          height={50}
+          onPress={() => navigation.navigate('Notifications')}
+        />
+        <ControlShevron
+          text={'Мой словарь'}
+          height={50}
+          onPress={() => navigation.navigate('Dictionary')}
+        />
+        <ControlShevron text={'Как работает приложение'} height={50} />
+        <ControlShevron text={'Выйти'} rightAsset={''} height={50} />
       </View>
     </View>
   );

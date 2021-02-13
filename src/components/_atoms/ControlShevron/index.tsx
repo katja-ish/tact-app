@@ -3,15 +3,15 @@ import { View, StyleSheet } from 'react-native';
 import { Text, Colors } from '@app/theme';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 
-const ButtonLight = ({ text, height, value }: any) => {
+const ControlShevron = ({ text, height, leftAsset, rightAsset, onPress }: any) => {
   return (
-    <TouchableOpacity style={styles.container}>
+    <TouchableOpacity style={styles.container} onPress={onPress}>
       <View style={styles.textContainer}>
         <Text fontSize="buttonText" style={styles.text}>
           {text}
         </Text>
         <Text fontSize="big" style={styles.value}>
-          {value}
+          {rightAsset}
         </Text>
       </View>
     </TouchableOpacity>
@@ -46,4 +46,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default ButtonLight;
+export default ControlShevron;
