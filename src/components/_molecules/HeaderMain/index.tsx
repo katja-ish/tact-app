@@ -2,8 +2,9 @@ import React from 'react';
 import { View, StyleSheet } from 'react-native';
 import { Text, Colors } from '@app/theme';
 import Avatar from '@app/components/_atoms/Avatar';
+import { TouchableOpacity } from 'react-native-gesture-handler';
 
-const HeaderMain = () => {
+const HeaderMain = ({ navigation }: any) => {
   return (
     <View style={styles.container}>
       <Text fontSize="h1" style={styles.status}>

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { Colors } from '@app/theme';
 import { SafeAreaView, View, StyleSheet, FlatList, Switch, Button } from 'react-native';
 import ConversationListItem from './components/ConversationListItem';
@@ -8,6 +8,8 @@ import { useDispatch, useSelector } from '@app/hooks';
 import { setContacts } from '@app/store/contacts/actions';
 import { createStackNavigator } from '@react-navigation/stack';
 import HeaderMain from '@app/components/_molecules/HeaderMain';
+import SquareButton from '@app/components/_atoms/SquareButton';
+import Switcher from '@app/components/_molecules/Switcher';
 const Stack = createStackNavigator();
 
 const ConversationsList = ({ navigation }: any) => {
@@ -22,39 +24,17 @@ const ConversationsList = ({ navigation }: any) => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  const [isEnabled, setIsEnabled] = useState(false);
-  const toggleSwitch = () => setIsEnabled((previousState) => !previousState);
-
   const renderConversation = ({ item }: any) => <ConversationListItem item={item} />;
 
   return (
     <SafeAreaView style={styles.container}>
       <HeaderMain />
 
-      <Button onPress={() => navigation.navigate('AccountDetails')} title={'аккаунт'} />
-      <Button onPress={() => navigation.navigate('Settings')} title={'настройки'} />
+      <SquareButton icon="👤" onPress={() => navigation.navigate('AccountDetails')} />
+
+      <Switcher />
 
       {/* <ScrollView> */}
-
-      {/* Свитчер для переключения с Flatlist на Tabs: */}
-
-      {/* <TouchableHighlight
-        onPress={() => {
-          alert('Switch to rows!');
-        }}
-        underlayColor="white">
-        <View style={styles.button}>
-          <Text style={styles.buttonText}>≣</Text>
-        </View>
-      </TouchableHighlight> 
-      
-      <Switch
-        trackColor={{ false: '#767577', true: '#81b0ff' }}
-        thumbColor={isEnabled ? '#f5dd4b' : '#f4f3f4'}
-        ios_backgroundColor="#3e3e3e"
-        onValueChange={toggleSwitch}
-        value={isEnabled}
-      /> */}
 
       {/* Tabs: */}
       {/*  {contacts.length > 0 && <DragTabs />} */}

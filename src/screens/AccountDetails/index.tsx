@@ -1,8 +1,10 @@
 import React from 'react';
 import { Text, Colors } from '@app/theme';
-import { View, SafeAreaView, StyleSheet, Button } from 'react-native';
+import { View, SafeAreaView, StyleSheet } from 'react-native';
 import ControlShevron from '@app/components/_atoms/ControlShevron';
 import SquareButton from '@app/components/_atoms/SquareButton';
+import Avatar from '@app/components/_atoms/Avatar';
+import ShareLink from '@app/components/_molecules/ShareLink';
 // тема с radix-icons не работает
 // import { FaceIcon } from '@modulz/radix-icons';
 
@@ -11,19 +13,22 @@ function AccountDetails({ navigation }: any) {
     <View style={styles.container}>
       {/* <FaceIcon /> */}
 
-      <SquareButton icon="⚙️" onPress={() => navigation.navigate('Settings')} style={styles.nav} />
+      <SquareButton
+        icon="⚙️"
+        onPress={() => navigation.navigate('Settings')}
+        style={styles.settingsBtn}
+      />
 
       <View style={styles.flex}>
-        <View style={styles.avatar}></View>
+        <View style={styles.avatar}>
+          <Avatar size={80} />
+        </View>
         <Text style={styles.username}>Имя Фамилия</Text>
       </View>
-      <View style={styles.shareContainer}>
-        <Text fontSize={'big'} style={styles.shareLink}>
-          tact.app/semilunar
-        </Text>
-        <Text style={styles.shareText}>Поделитесь быстрой ссылкой с друзьями, чтобы общаться</Text>
-      </View>
-      <View style={styles.buttons}>
+
+      <ShareLink />
+
+      <View style={styles.controls}>
         <ControlShevron
           text={'Уведомления'}
           height={50}
@@ -45,20 +50,13 @@ const styles = StyleSheet.create({
   container: {
     backgroundColor: Colors.WHITE,
     paddingHorizontal: 20,
-    // paddingVertical: 30,
-    // position: 'relative',
     height: '100%',
   },
   flex: {
     flexDirection: 'column',
     alignItems: 'center',
   },
-  nav: {
-    // position: 'absolute',
-    // alignSelf: 'flex-end',
-    // top: 10,
-    // right: 10,
-  },
+  settingsBtn: {},
   username: {
     fontSize: 22,
     lineHeight: 22,
@@ -74,30 +72,7 @@ const styles = StyleSheet.create({
     marginBottom: 16,
     marginTop: 25,
   },
-  label: {
-    marginBottom: 10,
-  },
-  shareContainer: {
-    flexDirection: 'column',
-    alignItems: 'center',
-    backgroundColor: '#F6F6F6',
-    height: 110,
-    borderRadius: 10,
-    paddingHorizontal: 30,
-    paddingVertical: 20,
-    marginBottom: 42,
-  },
-  shareLink: {
-    color: Colors.SOFT_BLACK,
-    opacity: 0.6,
-    marginBottom: 12,
-  },
-  shareText: {
-    textAlign: 'center',
-    color: Colors.SOFT_BLACK,
-    opacity: 0.35,
-  },
-  buttons: {
+  controls: {
     flexDirection: 'column',
   },
 });
