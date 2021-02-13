@@ -5,4 +5,6 @@ export enum ScreenNames {
   ACCOUNT = 'AccountScreen',
   ACCOUNT_DETAILS = 'AccountDetails',
   SETTINGS = 'SettingsScreen',
+  NOTIFICATIONS = 'NotificationsScreen',
+  DICTIONARY = 'DictionaryScreen',
 }

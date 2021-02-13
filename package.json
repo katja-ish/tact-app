@@ -12,7 +12,6 @@
   },
   "dependencies": {
     "@modulz/radix-icons": "^4.0.0",
-    "@radix-ui/react-icons": "^1.0.1",
     "@react-native-community/blur": "^3.6.0",
     "@react-native-community/masked-view": "^0.1.10",
     "@react-navigation/material-top-tabs": "^5.2.16",

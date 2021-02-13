@@ -4,3 +4,5 @@ export { default as Settings } from './Settings';
 export { default as ContactsList } from './ContactsList';
 export { default as Account } from './Account';
 export { default as AccountDetails } from './AccountDetails';
+export { default as Notifications } from './Notifications';
+export { default as Dictionary } from './Dictionary';

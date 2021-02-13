@@ -31,7 +31,8 @@ const ConversationsList = ({ navigation }: any) => {
     <SafeAreaView style={styles.container}>
       <HeaderMain />
 
-      <Button onPress={() => navigation.navigate('Settings')} title={'Настройки'} />
+      <Button onPress={() => navigation.navigate('Account')} title={'аккаунт'} />
+      <Button onPress={() => navigation.navigate('Settings')} title={'настройки'} />
 
       {/* <ScrollView> */}
 
@@ -74,7 +75,7 @@ const ConversationsList = ({ navigation }: any) => {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: 'white',
+    backgroundColor: Colors.BG_GREY,
     flex: 1,
   },
   flex: {

@@ -13,4 +13,5 @@ export enum Colors {
   BLUE_WINTHER = '#0087FF',
   LEMON_PIE = '#FFDE88',
   PINK = '#FF88E5',
+  BG_GREY = '#F6F6F6',
 }
