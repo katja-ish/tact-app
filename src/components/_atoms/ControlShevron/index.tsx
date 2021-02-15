@@ -39,6 +39,7 @@ const styles = StyleSheet.create({
   text: {
     color: Colors.SOFT_BLACK,
     lineHeight: 50,
+    // fontFamily: 'TTCommons-Regular',
   },
   value: {
     color: Colors.SOFT_BLACK,
