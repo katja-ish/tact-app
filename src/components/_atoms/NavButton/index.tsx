@@ -13,6 +13,9 @@ const NavButton = ({ text }: any) => {
   );
 };
 
+// const BGCOLOR = isActive ? Colors.STRONG_BLACK : 'none';
+// const TEXTCOLOR = isActive ? Colors.WHITE : Colors.SYSTEM_GREY;
+
 const styles = StyleSheet.create({
   container: {
     alignSelf: 'flex-start',

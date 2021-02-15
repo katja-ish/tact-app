@@ -5,6 +5,7 @@ import ControlShevron from '@app/components/_atoms/ControlShevron';
 import SquareButton from '@app/components/_atoms/SquareButton';
 import Avatar from '@app/components/_atoms/Avatar';
 import ShareLink from '@app/components/_molecules/ShareLink';
+import { ChevronRight } from '@app/assets/icons';
 // тема с radix-icons не работает
 // import { FaceIcon } from '@modulz/radix-icons';
 
@@ -20,9 +21,7 @@ function AccountDetails({ navigation }: any) {
       />
 
       <View style={styles.flex}>
-        <View style={styles.avatar}>
-          <Avatar size={80} />
-        </View>
+        <View style={styles.avatar}>{/* <Avatar size={80} /> */}</View>
         <Text style={styles.username}>Имя Фамилия</Text>
       </View>
 
@@ -31,16 +30,16 @@ function AccountDetails({ navigation }: any) {
       <View style={styles.controls}>
         <ControlShevron
           text={'Уведомления'}
-          height={50}
+          rightAsset={<ChevronRight />}
           onPress={() => navigation.navigate('Notifications')}
         />
         <ControlShevron
           text={'Мой словарь'}
-          height={50}
+          rightAsset={<ChevronRight />}
           onPress={() => navigation.navigate('Dictionary')}
         />
-        <ControlShevron text={'Как работает приложение'} height={50} />
-        <ControlShevron text={'Выйти'} rightAsset={''} height={50} />
+        <ControlShevron text={'Как работает приложение'} rightAsset={<ChevronRight />} />
+        <ControlShevron text={'Выйти'} rightAsset={''} />
       </View>
     </View>
   );
@@ -67,7 +66,7 @@ const styles = StyleSheet.create({
   avatar: {
     width: 80,
     height: 80,
-    backgroundColor: '#c4c4c4',
+    backgroundColor: '#ddd',
     borderRadius: 25,
     marginBottom: 16,
     marginTop: 25,
