@@ -10,15 +10,23 @@ const Account = () => {
       <Stack.Screen
         name="AccountDetails"
         component={AccountDetails}
-        options={{ title: 'Аккаунт' }}
+        options={{ title: 'Аккаунт', headerTintColor: '#1A4D8F' }}
       />
-      <Stack.Screen name="Settings" component={Settings} options={{ title: 'Настройки' }} />
+      <Stack.Screen
+        name="Settings"
+        component={Settings}
+        options={{ title: 'Настройки', headerTintColor: '#1A4D8F', headerBackTitle: ' ' }}
+      />
       <Stack.Screen
         name="Notifications"
         component={Notifications}
-        options={{ title: 'Уведомления' }}
+        options={{ title: 'Уведомления', headerTintColor: '#1A4D8F', headerBackTitle: ' ' }}
       />
-      <Stack.Screen name="Dictionary" component={Dictionary} options={{ title: 'Словарь' }} />
+      <Stack.Screen
+        name="Dictionary"
+        component={Dictionary}
+        options={{ title: 'Словарь', headerTintColor: '#1A4D8F', headerBackTitle: ' ' }}
+      />
     </Stack.Navigator>
   );
 };

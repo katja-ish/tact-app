@@ -29,8 +29,6 @@ const styles = StyleSheet.create({
     alignItems: 'flex-start',
     borderBottomWidth: 1,
     borderBottomColor: 'rgba(50, 50, 50, 0.1);',
-    // borderTopWidth: 1,
-    // borderTopColor: 'rgba(50, 50, 50, 0.1);',
   },
   textContainer: {
     width: '100%',
