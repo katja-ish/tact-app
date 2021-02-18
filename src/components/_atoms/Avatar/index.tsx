@@ -6,6 +6,8 @@ const Avatar = ({ image }: any, { size }: any) => {
   return <View style={styles.avatar}></View>;
 };
 
+// SIZE = size ? size : 46;
+
 const styles = StyleSheet.create({
   avatar: {
     height: 46,

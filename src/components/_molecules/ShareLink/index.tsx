@@ -1,20 +1,20 @@
 import React from 'react';
-import { View, StyleSheet } from 'react-native';
+import { View, StyleSheet, TouchableOpacity } from 'react-native';
 import { Text, Colors } from '@app/theme';
 
 const ShareLink = () => {
   return (
-    <View style={styles.shareContainer}>
-      <Text fontSize={'big'} style={styles.shareLink}>
+    <TouchableOpacity style={styles.container}>
+      <Text fontSize={'big'} style={styles.link}>
         tact.app/semilunar
       </Text>
-      <Text style={styles.shareText}>Поделитесь быстрой ссылкой с друзьями, чтобы общаться</Text>
-    </View>
+      <Text style={styles.text}>Поделитесь быстрой ссылкой с друзьями, чтобы общаться</Text>
+    </TouchableOpacity>
   );
 };
 
 const styles = StyleSheet.create({
-  shareContainer: {
+  container: {
     flexDirection: 'column',
     alignItems: 'center',
     backgroundColor: Colors.BG_GREY,
@@ -24,12 +24,12 @@ const styles = StyleSheet.create({
     paddingVertical: 20,
     marginBottom: 42,
   },
-  shareLink: {
+  link: {
     color: Colors.SOFT_BLACK,
     opacity: 0.6,
     marginBottom: 12,
   },
-  shareText: {
+  text: {
     textAlign: 'center',
     color: Colors.SOFT_BLACK,
     opacity: 0.35,

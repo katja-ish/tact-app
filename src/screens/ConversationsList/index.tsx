@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { Colors } from '@app/theme';
-import { SafeAreaView, StyleSheet, FlatList } from 'react-native';
+import { SafeAreaView, StyleSheet, FlatList, View } from 'react-native';
 import ConversationListItem from './components/ConversationListItem';
 import Contacts from 'react-native-contacts';
 // import DragTabs from '@app/components/_organisms/DragTabs';
@@ -9,6 +9,7 @@ import { setContacts } from '@app/store/contacts/actions';
 import HeaderMain from '@app/components/_molecules/HeaderMain';
 import SquareButton from '@app/components/_atoms/SquareButton';
 import Switcher from '@app/components/_molecules/Switcher';
+import InfoBanner from '@app/components/_molecules/InfoBanner';
 // import { createStackNavigator } from '@react-navigation/stack';
 // const Stack = createStackNavigator();
 
@@ -32,9 +33,13 @@ const ConversationsList = ({ navigation }: any) => {
     <SafeAreaView style={styles.container}>
       <HeaderMain />
 
-      <SquareButton icon="👤" onPress={() => navigation.navigate('AccountDetails')} />
+      <View style={{ marginHorizontal: 20 }}>
+        <SquareButton icon="👤" onPress={() => navigation.navigate('AccountDetails')} />
 
-      <Switcher />
+        <Switcher />
+
+        <InfoBanner />
+      </View>
 
       {/* <ScrollView> */}
       {/* Tabs: */}

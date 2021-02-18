@@ -9,7 +9,6 @@ const { Value } = Animated;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    // backgroundColor: '#1c1d1e',
   },
 });
 export default () => {

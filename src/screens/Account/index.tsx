@@ -10,7 +10,7 @@ const Account = () => {
       <Stack.Screen
         name="AccountDetails"
         component={AccountDetails}
-        options={{ title: 'Аккаунт', headerTintColor: '#1A4D8F' }}
+        options={{ title: 'Аккаунт', headerTintColor: '#1A4D8F', headerShown: false }}
       />
       <Stack.Screen
         name="Settings"
