@@ -28,11 +28,14 @@ const styles = StyleSheet.create({
     color: Colors.SOFT_BLACK,
     opacity: 0.6,
     marginBottom: 12,
+    fontFamily: 'TTCommons-Regular',
   },
   text: {
     textAlign: 'center',
     color: Colors.SOFT_BLACK,
     opacity: 0.35,
+    fontSize: 18,
+    fontFamily: 'TTCommons-Regular',
   },
 });
 

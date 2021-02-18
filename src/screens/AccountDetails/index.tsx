@@ -59,11 +59,12 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   username: {
-    fontSize: 22,
+    fontSize: 24,
     lineHeight: 22,
     fontWeight: '600',
     color: Colors.SOFT_BLACK,
     marginBottom: 20,
+    fontFamily: 'TTCommons-Medium',
   },
   avatar: {
     width: 80,

@@ -50,10 +50,12 @@ const styles = StyleSheet.create({
     fontSize: 18,
     lineHeight: 21,
     letterSpacing: 0.02,
+    fontFamily: 'TTCommons-Regular',
   },
   text: {
     color: Colors.SOFT_BLACK,
     opacity: 0.6,
+    fontFamily: 'TTCommons-Regular',
   },
 });
 

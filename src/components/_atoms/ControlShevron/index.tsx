@@ -11,9 +11,7 @@ const ControlShevron = ({ text, height, leftAsset, rightAsset, onPress }: any) =
         <Text fontSize="buttonText" style={styles.text}>
           {text}
         </Text>
-        <Text fontSize="big" style={styles.value}>
-          {rightAsset}
-        </Text>
+        <Text style={styles.value}>{rightAsset}</Text>
       </View>
     </TouchableOpacity>
   );

@@ -23,6 +23,7 @@ const styles = StyleSheet.create({
     color: Colors.BOOKSHELF_BLUE,
     fontSize: 25,
     lineHeight: 29,
+    fontFamily: 'TTCommons-Medium',
   },
 });
 

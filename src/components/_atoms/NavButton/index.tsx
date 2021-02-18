@@ -26,6 +26,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     marginRight: 10,
+    fontFamily: 'TTCommons-Medium',
   },
   text: {
     color: Colors.WHITE,

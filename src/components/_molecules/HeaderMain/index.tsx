@@ -29,6 +29,7 @@ const styles = StyleSheet.create({
     lineHeight: 35,
     letterSpacing: -0.01,
     color: Colors.SOFT_BLACK,
+    fontFamily: 'TTCommons-Medium',
   },
 });
 

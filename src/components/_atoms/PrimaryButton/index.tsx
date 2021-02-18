@@ -24,6 +24,7 @@ const styles = StyleSheet.create({
   text: {
     color: Colors.WHITE,
     fontWeight: '500',
+    fontFamily: 'TTCommons-Medium',
   },
 });
 

@@ -14,6 +14,7 @@ const styles = StyleSheet.create({
   text: {
     color: Colors.SOFT_BLACK,
     opacity: 0.35,
+    fontFamily: 'TTCommons-Medium',
   },
 });
 

@@ -38,7 +38,7 @@ const ConversationsList = ({ navigation }: any) => {
 
         <Switcher />
 
-        <InfoBanner />
+        {/* <InfoBanner /> */}
       </View>
 
       {/* <ScrollView> */}

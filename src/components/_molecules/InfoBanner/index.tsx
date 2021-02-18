@@ -20,16 +20,22 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
     paddingRight: 30,
     borderRadius: 15,
-    backgroundColor: '#CDD5FF',
+    backgroundColor: '#ddd',
     height: 107,
+    marginVertical: 25,
   },
   title: {
     fontSize: 18,
     lineHeight: 21,
     letterSpacing: -0.01,
     marginBottom: 5,
+    fontFamily: 'TTCommons-Medium',
   },
-  p: { fontSize: 15, lineHeight: 17 },
+  p: {
+    fontSize: 15,
+    lineHeight: 17,
+    fontFamily: 'TTCommons-Regular',
+  },
 });
 
 export default InfoBanner;
