@@ -7,4 +7,6 @@ export enum ScreenNames {
   SETTINGS = 'SettingsScreen',
   NOTIFICATIONS = 'NotificationsScreen',
   DICTIONARY = 'DictionaryScreen',
+  SIGNUP = 'SignUpScreen',
+  LOGIN = 'LoginScreen',
 }

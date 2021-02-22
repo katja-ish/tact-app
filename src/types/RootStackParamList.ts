@@ -10,6 +10,8 @@ export type RootStackParamList = {
   [ScreenNames.SETTINGS]: undefined;
   [ScreenNames.NOTIFICATIONS]: undefined;
   [ScreenNames.DICTIONARY]: undefined;
+  [ScreenNames.SIGNUP]: undefined;
+  [ScreenNames.LOGIN]: undefined;
 };
 
 export type RouteType = RouteProp<Record<string, object | undefined>, string>;

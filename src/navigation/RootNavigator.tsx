@@ -1,13 +1,5 @@
 import React from 'react';
-import {
-  ContactsList,
-  ConversationsList,
-  Account,
-  AccountDetails,
-  Settings,
-  Dictionary,
-  Notifications,
-} from '@app/screens';
+import { SignUp, ConversationsList, Account, ContactsList } from '@app/screens';
 import { ScreenNames, RootStackParamList } from '@app/types';
 import { enableScreens } from 'react-native-screens';
 import { createStackNavigator } from '@react-navigation/stack';
@@ -36,7 +28,7 @@ export default () => {
       swipeEnabled={false}
       tabBar={(props) => <AnimatedTabBar {...props} />}
       tabBarPosition="bottom">
-      {/* <Tab.Screen name={ScreenNames.CONTACTS_LIST} component={ContactsList} /> */}
+      <Tab.Screen name={ScreenNames.SIGNUP} component={SignUp} />
       <Tab.Screen name={ScreenNames.CONVERSATIONS_LIST} component={ConversationsList} />
       <Tab.Screen name={ScreenNames.ACCOUNT} component={Account} />
     </Tab.Navigator>

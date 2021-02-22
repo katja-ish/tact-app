@@ -6,3 +6,5 @@ export { default as Account } from './Account';
 export { default as AccountDetails } from './AccountDetails';
 export { default as Notifications } from './Notifications';
 export { default as Dictionary } from './Dictionary';
+export { default as SignUp } from './SignUp';
+export { default as Login } from './Login';
