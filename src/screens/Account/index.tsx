@@ -1,14 +1,14 @@
 import React from 'react';
 import { Settings, AccountDetails, Notifications, Dictionary } from '@app/screens';
 import { createStackNavigator } from '@react-navigation/stack';
-
-const Stack = createStackNavigator();
+import { ScreenNames } from '@app/types';
 
 const Account = () => {
+  const Stack = createStackNavigator();
   return (
-    <Stack.Navigator initialRouteName="AccountDetails">
+    <Stack.Navigator initialRouteName={ScreenNames.ACCOUNT_DETAILS}>
       <Stack.Screen
-        name="AccountDetails"
+        name={ScreenNames.ACCOUNT_DETAILS}
         component={AccountDetails}
         options={{ title: 'Аккаунт', headerTintColor: '#1A4D8F', headerShown: false }}
       />

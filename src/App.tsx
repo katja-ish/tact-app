@@ -85,9 +85,7 @@ const App = () => {
     // </View>
 
     <Provider store={store}>
-      <NavigationContainer>
-        <RootNavigator />
-      </NavigationContainer>
+      <RootNavigator />
     </Provider>
   );
 };

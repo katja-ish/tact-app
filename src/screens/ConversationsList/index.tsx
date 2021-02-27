@@ -10,10 +10,13 @@ import HeaderMain from '@app/components/_molecules/HeaderMain';
 import SquareButton from '@app/components/_atoms/SquareButton';
 import Switcher from '@app/components/_molecules/Switcher';
 import InfoBanner from '@app/components/_molecules/InfoBanner';
+import { ScreenNames } from '@app/types';
+import { useNavigation } from '@react-navigation/native';
 // import { createStackNavigator } from '@react-navigation/stack';
 // const Stack = createStackNavigator();
 
-const ConversationsList = ({ navigation }: any) => {
+const ConversationsList = () => {
+  const navigation = useNavigation();
   const contacts = useSelector((state) => state.contacts.list);
   const dispatch = useDispatch();
   useEffect(() => {
@@ -34,11 +37,9 @@ const ConversationsList = ({ navigation }: any) => {
       <HeaderMain />
 
       <View style={{ marginHorizontal: 20 }}>
-        <SquareButton icon="👤" onPress={() => navigation.navigate('AccountDetails')} />
+        <SquareButton icon="👤" onPress={() => navigation.navigate(ScreenNames.ACCOUNT)} />
 
         <Switcher />
-
-        {/* <InfoBanner /> */}
       </View>
 
       {/* <ScrollView> */}
