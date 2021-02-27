@@ -8,19 +8,21 @@ import ShareLink from '@app/components/_molecules/ShareLink';
 import { ChevronRight } from '@app/assets/icons';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useNavigation } from '@react-navigation/native';
+import { ScreenNames } from '@app/types';
+import { Screen } from 'react-native-screens';
 // import { FaceIcon } from '@modulz/radix-icons';
 // import { GearIcon } from '@radix-ui/react-icons';
 
-export default function AccountDetails() {
+export const AccountDetails = () => {
   const navigation = useNavigation();
   return (
-    <SafeAreaView>
+    <SafeAreaView style={{ position: 'relative' }}>
       <View style={styles.container}>
         <SquareButton
           icon="⚙️"
           // icon={ <GearIcon /> }
-          onPress={() => navigation.navigate('Settings')}
-          style={{ justifyContent: 'flex-end' }}
+          onPress={() => navigation.navigate(ScreenNames.SETTINGS)}
+          style={styles.nav}
         />
 
         <View style={styles.flex}>
@@ -34,12 +36,12 @@ export default function AccountDetails() {
           <ControlShevron
             text={'Уведомления'}
             rightAsset={<ChevronRight />}
-            onPress={() => navigation.navigate('Notifications')}
+            onPress={() => navigation.navigate(ScreenNames.NOTIFICATIONS)}
           />
           <ControlShevron
             text={'Мой словарь'}
             rightAsset={<ChevronRight />}
-            onPress={() => navigation.navigate('Dictionary')}
+            onPress={() => navigation.navigate(ScreenNames.DICTIONARY)}
           />
           <ControlShevron text={'Как работает приложение'} rightAsset={<ChevronRight />} />
           <ControlShevron text={'Выйти'} rightAsset={''} />
@@ -47,7 +49,7 @@ export default function AccountDetails() {
       </View>
     </SafeAreaView>
   );
-}
+};
 
 const styles = StyleSheet.create({
   container: {
@@ -77,6 +79,9 @@ const styles = StyleSheet.create({
   },
   controls: {
     flexDirection: 'column',
+  },
+  nav: {
+    position: 'absolute',
   },
 });
 
