@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@modulz/radix-icons": "^4.0.0",
+    "@radix-ui/react-icons": "^1.0.2",
     "@react-native-community/blur": "^3.6.0",
     "@react-native-community/masked-view": "^0.1.10",
     "@react-native-firebase/app": "^10.8.0",
@@ -31,7 +32,6 @@
     "react-native-svg": "^12.1.0",
     "react-native-tab-view": "^2.15.1",
     "react-native-vector-icons": "^7.1.0",
-    "react-navigation": "^4.4.0",
     "react-redux": "^7.2.2",
     "redux": "^4.0.5",
     "redux-act": "^1.8.0",

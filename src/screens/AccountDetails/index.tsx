@@ -7,17 +7,18 @@ import Avatar from '@app/components/_atoms/Avatar';
 import ShareLink from '@app/components/_molecules/ShareLink';
 import { ChevronRight } from '@app/assets/icons';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import { useNavigation } from '@react-navigation/native';
 // import { FaceIcon } from '@modulz/radix-icons';
+// import { GearIcon } from '@radix-ui/react-icons';
 
-function AccountDetails({ navigation }: any) {
+export default function AccountDetails() {
+  const navigation = useNavigation();
   return (
     <SafeAreaView>
       <View style={styles.container}>
-        {/* <FaceIcon /> */}
-
         <SquareButton
           icon="⚙️"
-          // icon={ <SettingsIcon /> }
+          // icon={ <GearIcon /> }
           onPress={() => navigation.navigate('Settings')}
           style={{ justifyContent: 'flex-end' }}
         />
@@ -79,4 +80,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default AccountDetails;
+// export default AccountDetails;

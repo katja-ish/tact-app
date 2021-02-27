@@ -21,6 +21,7 @@
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* TactAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* TactAppTests.m */; };
 		4097051F89994F2CBD607563 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 059C986C84574752ABA19CE2 /* FontAwesome.ttf */; };
+		463D862225EA7AF1003F3F84 /* main.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = 008F07F21AC5B25A0029DE68 /* main.jsbundle */; };
 		4667497F25B230FC00973A37 /* main.jsbundle in Sources */ = {isa = PBXBuildFile; fileRef = 008F07F21AC5B25A0029DE68 /* main.jsbundle */; };
 		46AC126225DFD55E00F8F52D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 46AC126125DFD55E00F8F52D /* GoogleService-Info.plist */; };
 		46D6E03425DEDFF400067891 /* TTCommons-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 46D6E03225DEDFF400067891 /* TTCommons-Regular.ttf */; };
@@ -441,6 +442,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				463D862225EA7AF1003F3F84 /* main.jsbundle in Resources */,
 				46D6E03525DEDFF400067891 /* TTCommons-Medium.ttf in Resources */,
 				46D6E03425DEDFF400067891 /* TTCommons-Regular.ttf in Resources */,
 				46AC126225DFD55E00F8F52D /* GoogleService-Info.plist in Resources */,
